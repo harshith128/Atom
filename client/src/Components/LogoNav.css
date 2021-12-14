@@ -1,0 +1,52 @@
+* {
+	font-family: "Inter", sans-serif;
+	color: #282828;
+	font-size: 14px;
+	line-height: auto;
+}
+.searchIcon {
+	/* padding: spacing(0, 2); */
+	height: 100%;
+	position: relative;
+	left: 2%;
+	pointer-events: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#forFlex {
+	display: flex;
+	margin-right: 3%;
+}
+#forFlex img {
+	width: 30%;
+	margin-left: 7%;
+}
+.hover:hover {
+	color: #018757;
+}
+#forFlex img:hover {
+	color: #018757;
+}
+.closeIcon {
+	position: relative;
+	margin-left: -4%;
+}
+@media (max-width: 1000px) {
+	.closeIcon {
+		position: relative;
+		margin-left: -5%;
+	}
+}
+@media (max-width: 700px) {
+	.closeIcon {
+		position: relative;
+		margin-left: -8%;
+	}
+}
+@media (max-width: 400px) {
+	.closeIcon {
+		position: relative;
+		margin-left: -11%;
+	}
+}
