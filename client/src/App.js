@@ -1,16 +1,12 @@
-// import logo from './logo.svg';
-
 import './App.css';
-import LogoNav from "./Components/LogoNav"
-
-
-
+import LogoNav from './Components/LogoNav';
+import SignupPage from './Components/SignupPage/SignupPage';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <SignupPage />
       <LogoNav></LogoNav>
-      {/* <Test></Test> */}
     </div>
   );
 }

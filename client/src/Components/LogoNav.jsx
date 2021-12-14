@@ -30,7 +30,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 		},
 	},
 }));
-export default function ButtonAppBar() {
+export default function LogoNav() {
 	const [render, setRender] = React.useState(true);
 	const handleSearch = () => {
 		setRender(!render);
