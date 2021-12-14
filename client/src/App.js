@@ -1,5 +1,5 @@
 import './App.css';
-import LogoNav from './Components/LogoNav';
+import LogoNav from './Components/LogoNavbar/LogoNav';
 import SignupPage from './Components/SignupPage/SignupPage';
 
 function App() {

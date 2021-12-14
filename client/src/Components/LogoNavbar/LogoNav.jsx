@@ -2,34 +2,18 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import LOGO from "../utils/svgs/Logo.svg";
-import SEARCH from "../utils/svgs/search.svg";
+import LOGO from "../../utils/svgs/Logo.svg";
+import SEARCH from "../../utils/svgs/search.svg";
 import "./LogoNav.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import InputBase from "@mui/material/InputBase";
-import { styled, alpha } from "@mui/material/styles";
 import { TextField } from "@mui/material";
-import CLOSE from "../utils/svgs/Vector.svg";
+import CLOSE from "../../utils/svgs/Close.svg";
 
 const theme = createTheme();
 theme.typography.body2 = {
 	fontFamily: ["Inter", "sans-serif"].join(","),
 	fontSize: "14px",
 };
-
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-	color: "inherit",
-	"& .MuiInputBase-input": {
-		padding: theme.spacing(1, 1, 1, 0),
-		// vertical padding + font size from searchIcon
-		paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-		transition: theme.transitions.create("width"),
-		width: "100%",
-		[theme.breakpoints.up("md")]: {
-			width: "20ch",
-		},
-	},
-}));
 export default function LogoNav() {
 	const [render, setRender] = React.useState(true);
 	const handleSearch = () => {
