@@ -38,13 +38,60 @@
 .card_para{
     margin-left: 122px;
     margin-top: 40px;
-    width: 552px;
+    width: 512px;
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     color: #000000;
+}
+
+.product_detail_card{
+    width: 512px;
+    height: 150px;
+    border: 1px solid rgb(221, 218, 218);
+    margin-left: 122px;
+    margin-top: 40px;
+}
+
+.heading1_card{
+    width: 132px;
+    height: 31px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+
+    margin-left: 122px;
+    margin-top: 56px;
+}
+
+.pledge_detail_row{
+    width: 512px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 122px;
+    margin-top: 56px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+}
+
+.underline{
+    height: 1px;
+    width: 512px;
+    margin-left: 122px;
+    margin-top: 40px;
+    background: #000;
 }
 
 

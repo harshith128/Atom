@@ -22,6 +22,35 @@ const CardDetailPage = () => {
                 <div className="product_detail_card">
                     <img src="" alt="" />
                 </div>
+
+                <div className="heading1_card">
+                Your plege
+                </div>
+
+                <div className="pledge_detail_row">
+                    <div>
+                        Reward <br /><br />Bonus
+                    </div>
+                    <div>
+                        No reward, I just want to support the project
+                    </div>
+                    <div className="pledge_amount">
+                        $10
+                    </div>
+                </div>
+                
+                <div className='underline'></div>
+
+                <div className="pledge_detail_row">
+                    <div>
+                    Total amount
+                    </div>
+                   
+                    <div className="pledge_amount">
+                        $10
+                    </div>
+                </div>
+
             </div>
             
                 
