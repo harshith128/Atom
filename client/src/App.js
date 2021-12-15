@@ -2,6 +2,7 @@ import "./App.css";
 import LogoNav from "./Components/LogoNavbar/LogoNav";
 import SignupPage from "./Components/SignupPage/SignupPage";
 import { Switch, Route } from "react-router-dom";
+import CardDetailPage from "./Components/CardDetailPage/CardDetailPage";
 
 function App() {
 	return (
@@ -12,6 +13,9 @@ function App() {
 				</Route>
 				<Route exact path="/signup">
 					<SignupPage />
+        </Route>
+				<Route exact path="/carddetail">
+					<CardDetailPage />
 				</Route>
 			</Switch>
 		</div>
