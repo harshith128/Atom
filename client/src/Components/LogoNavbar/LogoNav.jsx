@@ -27,7 +27,7 @@ export default function LogoNav() {
 						<Typography variant="body2" className="hover">
 							Discover
 						</Typography>
-						<Typography m={2} variant="body2" className="hover">
+						<Typography m={2} variant="body2" className="hover" style={{ flexGrow: "1" }}>
 							Start a project
 						</Typography>
 						<div style={{ flexGrow: "1" }}>
