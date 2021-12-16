@@ -1,7 +1,7 @@
 import "./App.css";
 
 import SignupPage from "./Components/SignupPage/SignupPage";
-import ConfimationPage from "./Components/ConfimationPage/ConfimationPage";
+import ConfirmationPage from "./Components/ConfirmationPage/ConfirmationPage";
 import { Switch, Route } from "react-router-dom";
 import CardDetailPage from "./Components/CardDetailPage/CardDetailPage";
 import FirstPage from "./Components/FirstPage/FirstPage";
@@ -22,7 +22,7 @@ function App() {
 				</Route>
 
 				<Route exact path="/confirmation">
-					<ConfimationPage />
+					<ConfirmationPage />
 				</Route>
 			</Switch>
 		</div>
