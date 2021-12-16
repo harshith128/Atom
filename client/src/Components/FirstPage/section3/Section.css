@@ -1,0 +1,22 @@
+h1 {
+	font-size: 34px;
+	text-align: center;
+	font-weight: normal;
+}
+p {
+	text-align: center;
+}
+.count {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 2px 130px 1px;
+	position: absolute;
+	width: 1128px;
+	height: 104px;
+	left: calc(50% - 1128px / 2);
+	top: 346px;
+}
