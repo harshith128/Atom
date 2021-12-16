@@ -7,9 +7,9 @@ const projectSchema = new mongoose.Schema({
     creator: { type: String },
     coverImage: { type: String },
     category: { type: String },
-    city: { type: String },
-    state: { type: String },
-    country: { type: String },
+    subcategory: [{ type: String }],
+    tags: [{ type: String }],
+    location: { type: String }
 }, {
     versionKey: false,
     timestamps: true
