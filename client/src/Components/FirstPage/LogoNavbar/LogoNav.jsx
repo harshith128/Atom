@@ -2,12 +2,13 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import LOGO from "../../utils/svgs/Logo.svg";
-import SEARCH from "../../utils/svgs/search.svg";
+import LOGO from "../../../utils/svgs/Logo.svg";
+import SEARCH from "../../../utils/svgs/search.svg";
+import CLOSE from "../../../utils/svgs/Close.svg";
 import "./LogoNav.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { TextField } from "@mui/material";
-import CLOSE from "../../utils/svgs/Close.svg";
+
 
 const theme = createTheme();
 theme.typography.body2 = {
@@ -21,13 +22,13 @@ export default function LogoNav() {
 	};
 	if (render) {
 		return (
-			<Box sx={{ flexGrow: 1 }}>
+			<Box >
 				<Toolbar>
 					<ThemeProvider theme={theme}>
 						<Typography variant="body2" className="hover">
 							Discover
 						</Typography>
-						<Typography m={2} variant="body2" className="hover" style={{ flexGrow: "1" }}>
+						<Typography variant="body2" className="hover" style={{ flexGrow: "1", textAlign: "start", marginLeft:"2%"}}>
 							Start a project
 						</Typography>
 						<div style={{ flexGrow: "1" }}>

@@ -1,28 +1,28 @@
 import "./App.css";
-import LogoNav from "./Components/LogoNavbar/LogoNav";
+
 import SignupPage from "./Components/SignupPage/SignupPage";
+import ConfimationPage from "./Components/ConfimationPage/ConfimationPage";
 import { Switch, Route } from "react-router-dom";
 import CardDetailPage from "./Components/CardDetailPage/CardDetailPage";
-import ConfirmationPage from "./Components/ConfirmationPage/ConfirmationPage";
+import FirstPage from "./Components/FirstPage/FirstPage";
 
 function App() {
 	return (
 		<div className="App">
 			<Switch>
 				<Route exact path="/">
-					<LogoNav></LogoNav>
+					<FirstPage></FirstPage>
 				</Route>
 
 				<Route exact path="/signup">
 					<SignupPage />
 				</Route>
-				
 				<Route exact path="/carddetail">
 					<CardDetailPage />
 				</Route>
 
 				<Route exact path="/confirmation">
-					<ConfirmationPage />
+					<ConfimationPage />
 				</Route>
 			</Switch>
 		</div>
