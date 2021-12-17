@@ -1,4 +1,5 @@
 import React from "react";
+import { Footer } from "../Footer/Footer";
 import FeaturedProject from "./FeaturedProject/FeaturedProject";
 import LogoNav from "./LogoNavbar/LogoNav";
 import Nav from "./NavBar2/Nav";
@@ -15,6 +16,7 @@ export default function FirstPage() {
 				<FeaturedProject></FeaturedProject>
 				<Recommended></Recommended>
 			</div>
+			<Footer></Footer>
 		</div>
 	);
 }
