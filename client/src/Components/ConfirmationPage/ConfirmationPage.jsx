@@ -1,3 +1,4 @@
+import LogoNav from '../FirstPage/LogoNavbar/LogoNav';
 import './ConfirmationPage.css';
 
 const ConfirmationPage = () => {
@@ -13,7 +14,9 @@ const ConfirmationPage = () => {
               </div>
           </div>  
 
-          <div className="logo_bar">
+
+            <LogoNav />
+          {/* <div className="logo_bar">
               <div className="logo_content_1">
                   <span>Discover</span>
                   <span>Start a project</span>
@@ -30,7 +33,7 @@ const ConfirmationPage = () => {
                 <img className="user_profile_pic_img" src="images/profile.png" alt="" />
                   
               </div>
-          </div>
+          </div> */}
 
           <div className="content_div">
               <div className="left_content">
@@ -76,10 +79,8 @@ const ConfirmationPage = () => {
         <div className="project_content">
               <h1>space for fetching the data from backend</h1>
         </div>
-        <h1>Hello</h1>
-        
         <div className='advertising_poster'>
-            <img src="images/advertising.png" alt="advertising poster" />
+            <img className='advertising_poster' src="images/advertising1.jpg" alt="advertising poster" />
         </div>
         
         <div className="below_poster_div">
