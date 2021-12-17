@@ -154,6 +154,7 @@
     font-size: 12px;
     line-height: 15px;
     color: #003BFF;
+    cursor: pointer;
 }
 
 
@@ -254,6 +255,7 @@
     border: none;
     margin-right: 12px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 .fb_share_btn{
     display: flex;
@@ -264,12 +266,14 @@
     background: #39579A;
     border: none;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .copy_link_btn{
     border: none;
     background: transparent;
     margin-right: 70px;
+    cursor: pointer;
 }
 .icon_common_class{
     margin-right: 6px;
@@ -283,7 +287,6 @@
 .advertising_poster{
     width: 100%;
     height: 264px;
-    border: 1px solid rgb(255, 187, 0);
 }
 
 .below_poster_div{
@@ -324,4 +327,5 @@
     border: none;
     color: #FFFFFF;
     margin-top: 48px;
+    cursor: pointer;
 }

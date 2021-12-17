@@ -213,12 +213,17 @@
 .reward_div{
     width: 292px;
     height: 47px;
-    border: 1px solid black;
     margin-left: 56px;
     margin-top: 38px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background: #000; */
+    background-image: url("./reward_bg.png");
+    background-size: cover;
+}
+.reward_div>span{
+    color: #FFFFFF;
 }
 
 .card_note{
