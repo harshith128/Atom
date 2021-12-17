@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: column;
     width: 248px;
-    height: 220px;
+    height: 230px;
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
     box-sizing: border-box;
@@ -211,4 +211,52 @@
     height: 31px;
     background: #FFFFFF;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.pledge_input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 220px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.dollar{
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.enter_pledge_amount{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 0px 13px 24px;
+    width: 176px;
+    height: 40px;
+    top: calc(50% - 40px/2);
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+}
+
+.box2_para1{
+    width: 183px;
+    height: 51px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #282828;
+    text-align: left;
+    
 }

@@ -6,16 +6,10 @@ import { Switch, Route } from "react-router-dom";
 import CardDetailPage from "./Components/CardDetailPage/CardDetailPage";
 import FirstPage from "./Components/FirstPage/FirstPage";
 import { DesignAndTech } from "./Components/SecondPage/DesignAndTech";
-<<<<<<< HEAD
 import { Exploremore } from "./Components/ExploreMore/Exploremore";
 import { ProductPage } from "./Components/ProductPage/ProductPage";
 
 
-=======
-import { ProductPage } from "./Components/ProductPage/ProductPage";
-import { MenuPage } from "./Components/ProductPage/MenuPage";
-import { Exploremore } from "./Components/ExploreMore/Exploremore";
->>>>>>> 0b621b4ac96b6de44c892e05f421cde0422a9acd
 
 function App() {
 	return (

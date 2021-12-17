@@ -120,13 +120,20 @@ const ProductContent = () => {
                 <br />
                 
                 <div className="box1">
-                    <span className="box1_head1">Orca </span>
-                    <span className="box1_sub_head1">First created . feature</span>
-                    <p className="box1_para1">We are seeking to make your life easier and more convenient through our smart products, which aren’t limited to electronic products but... <br /> <span>See more</span> </p>
+                    <span className="box1_head1">Pledge without a reward</span>
+                    <div className="pledge_input"><span className="dollar">$</span><input type="text" className="enter_pledge_amount" placeholder='Enter Amount' /></div>
+                    
+                    <p className="box2_para1">Back it because you believe in it.</p>
+                    <p className="box2_para1">Support the project for no
+                    reward, just because it speaks to you.</p>
                 </div>
 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut reprehenderit cum commodi quo amet quae sequi, expedita esse impedit, officiis alias doloremque deserunt magnam ipsa. Optio tempora laborum, ducimus possimus, cumque saepe soluta eveniet sapiente fuga aspernatur libero maxime explicabo enim error distinctio consequuntur odio! Assumenda non quia commodi sint.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum ab ad delectus magni. Ut ab quaerat numquam illum, doloremque commodi voluptas eveniet repellendus dolore ad, eligendi dignissimos voluptate, perferendis vero nostrum facere officiis ullam sequi culpa laudantium blanditiis vel! Voluptatibus quidem explicabo vero nostrum velit excepturi voluptate corporis eos quos consectetur dolore et veritatis, tenetur quae, accusantium eligendi maxime voluptatum nemo debitis quis praesentium temporibus. Ea eum culpa dolor, ab hic nam asperiores? Ullam omnis quis iusto repudiandae consequatur modi ut ab dolorem corrupti rem harum quasi necessitatibus asperiores eos, vero quam minima placeat dignissimos ipsa aliquam unde eaque laboriosam error. Molestias ut tenetur adipisci similique laboriosam atque quia nobis culpa aliquam nesciunt. Recusandae ipsum quaerat ipsa, saepe error sit, commodi corrupti veniam sequi, culpa ratione dolor eius maxime consequuntur vero voluptatum! Voluptatum perspiciatis itaque ipsum natus recusandae earum eum esse totam, explicabo animi commodi veniam voluptatem blanditiis vero consequatur ex, alias quaerat nesciunt asperiores fugit. Unde laudantium id ipsum similique, vel laborum eius commodi dolorem tenetur nesciunt! Facere blanditiis iure, totam, mollitia reiciendis quos, nisi voluptatibus quis aspernatur maxime numquam quae iusto. Vero eligendi neque laudantium facere modi repellendus perspiciatis temporibus error ad fugit soluta officia suscipit earum consectetur, maxime ea dicta inventore nobis vitae iste. Optio quae illo vitae et molestias ex delectus quis. Ab, molestiae minus aperiam voluptatem, iste nemo dolores in cupiditate ipsa quaerat dolor nobis? Fuga earum soluta laborum facilis culpa tenetur laudantium exercitationem reprehenderit quia! Atque ut voluptate illum ad aperiam quidem vitae rem laboriosam veritatis eveniet nam cum iste nostrum eaque ullam, minima delectus mollitia omnis alias natus placeat maiores eos blanditiis dignissimos. Perspiciatis labore sit dolorem, eaque, neque dignissimos deleniti illo, corporis illum nesciunt minima accusantium. Repellendus, blanditiis ullam ex quasi laborum dicta, ea nobis eveniet nisi, aut molestiae sed quia!
+                <p className="box1_para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vel nemo temporibus cum numquam laudantium? Possimus ullam sed ducimus necessitatibus saepe obcaecati mollitia. Magni sapiente neque quo laudantium suscipit? Culpa assumenda facilis necessitatibus sed obcaecati consectetur, fugit, nemo in sequi repudiandae modi nam impedit sit, qui voluptates dolore dolor itaque.<br /> <span>See more</span> </p>
+                
+                <p className="box1_para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vel nemo temporibus cum numquam laudantium? Possimus ullam sed ducimus necessitatibus saepe obcaecati mollitia. Magni sapiente neque quo laudantium suscipit? Culpa assumenda facilis necessitatibus sed obcaecati consectetur, fugit, nemo in sequi repudiandae modi nam impedit sit, qui voluptates dolore dolor itaque.<br /> <span>See more</span> </p>
+                
+                <p className="box1_para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vel nemo temporibus cum numquam laudantium? Possimus ullam sed ducimus necessitatibus saepe obcaecati mollitia. Magni sapiente neque quo laudantium suscipit? Culpa assumenda facilis necessitatibus sed obcaecati consectetur, fugit, nemo in sequi repudiandae modi nam impedit sit, qui voluptates dolore dolor itaque.<br /> <span>See more</span> </p>
+                
             </div>
         </div>
         </>
