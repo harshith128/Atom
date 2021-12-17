@@ -17,12 +17,6 @@ export const DesignAndTech = () => {
 			<div>
 				<DisplayProjects />
 			</div>
-			<div>
-				<DisplayProjects />
-			</div>
-			<div>
-				<DisplayProjects />
-			</div>
 			<Explore category="Technology" subCategory ={tech} />
 			<Footer />
 		</div>
