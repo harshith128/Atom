@@ -45,6 +45,15 @@ router.get("/recommended", async(req, res) => {
     }
 })
 
+router.get("/discovermore", async(req, res) => {
+    try {
+        const projects = await Project.aggregate([{$sample: {size: 8}}]);
+        res.status(200).send({ projects });
+    } catch (error) {
+        return res.status(400).send({ error: error.message });
+    }
+})
+
 router.get("/featured", async(req, res) => {
     try {
         const projects = await Project.aggregate([{$sample: {size: 1}}]);
