@@ -20,7 +20,7 @@ export const Footer =  () => {
                         <FaTwitter />
                         <FaYoutube />
                     </div>
-                    <div className="dropdown">
+                    <div className="dropdown-footer">
                         <select>
                             <option>English</option>
                         </select>

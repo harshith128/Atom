@@ -46,8 +46,8 @@ export const Explore = ({subCategory, category}) => {
                                 <div className="cover">
                                     <img src={ele.coverImage} alt="Project cover" />
                                 </div>
-                                <div className="bar">
-                                    <div className="fill" style={{width: `${Math.floor(Math.random() * 100) + 1}%` }}></div>
+                                <div className="bar-explore">
+                                    <div className="fill-bar" style={{width: `${Math.floor(Math.random() * 100) + 1}%` }}></div>
                                 </div>
                                 <h3 className="pro-head">{ ele.projectName }</h3>
                                 <p className="pro-name">{ ele.description }</p>

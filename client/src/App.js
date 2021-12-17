@@ -6,6 +6,9 @@ import { Switch, Route } from "react-router-dom";
 import CardDetailPage from "./Components/CardDetailPage/CardDetailPage";
 import FirstPage from "./Components/FirstPage/FirstPage";
 import { DesignAndTech } from "./Components/SecondPage/DesignAndTech";
+import { ProductPage } from "./Components/ProductPage/ProductPage";
+import { MenuPage } from "./Components/ProductPage/MenuPage";
+import { Exploremore } from "./Components/ExploreMore/Exploremore";
 
 function App() {
 	return (

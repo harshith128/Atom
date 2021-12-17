@@ -64,14 +64,14 @@
     gap: 2%;
 }
 
-.bar {
-    height: 5px;
+.bar-explore {
+    height: 6px;
     width: 100%;
     background-color: #EBEBEB;
 }
 
-.fill {
-    height: 5px;
+.fill-bar {
+    height: 6px;
     background-color: #018757;
 }
 
