@@ -17,17 +17,17 @@ import * as React from "react";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 
-export default function BasicPagination({ perPage, paginate }) {
+export default function BasicPagination({ setPage, page }) {
+    const handleChange = (page) => {
+        
+    }
 	return (
 		<Stack spacing={2}>
-			<Pagination
-				count={perPage}
-				onChange={() => paginate(perPage)}
-				style={{ margin: "2% 8%" }}
+            <Pagination
+				count={page}
+				onChange={handleChange }
+				style={{ margin: "23% 33%" }}
 			/>
-			{/* <Pagination count={10} color="primary" />
-      <Pagination count={10} color="secondary" />
-      <Pagination count={10} disabled /> */}
 		</Stack>
 	);
 }

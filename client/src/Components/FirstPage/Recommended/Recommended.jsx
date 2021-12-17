@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import BasicPagination from "./Pagination";
+import Pagination from "@mui/material/Pagination";
 
 export default function Recommended() {
 	const [get, setGet] = useState([]);
@@ -8,32 +9,36 @@ export default function Recommended() {
 	const [perPage, setPerPage] = useState(3);
 	useEffect(() => {
 		const fetchData = async () => {
-			const res = await axios.get("http://localhost:2357/projects/random");
-			setGet(res.data.projects);
+			// const res = await axios.get(`http://localhost:2357/projects/random?_page=${page}&_limit=2`);
+			const res = await fetch(
+				`http://localhost:2357/projects/random?_page=${page}`
+			).then((d) => d.json());
+			setGet(res.projects);
+			// console.log(res.projects);
 		};
 		fetchData();
-	}, []);
-	// console.log(get);
+	}, [page]);
+	console.log("get:", get.projects);
 	const outer = {
 		position: "relative",
 		left: "4%",
 		width: "50%",
-		marginTop: "10.5%",
+		marginTop: "14.5%",
 	};
 	const element = {
 		display: "flex",
 		boxShadow: "0px 1px 0px rgba(163, 163, 163, 0.25)",
 		marginBottom: "2%",
-		width: "480px"
+		width: "480px",
 	};
 	const image = {
 		width: "168px",
 	};
 
-	const indexOfLastPage = page * perPage;
-	const indexOfFirstPage = indexOfLastPage - perPage;
-	const current = get.slice(indexOfFirstPage, indexOfLastPage);
-	const paginate = (number)=> setPage(number)
+	// const indexOfLastPage = page * perPage;
+	// const indexOfFirstPage = indexOfLastPage - perPage;
+	// const current = get.slice(indexOfFirstPage, indexOfLastPage);
+	// const paginate = (number)=> setPage(number)
 	return (
 		<div style={outer}>
 			<p
@@ -46,9 +51,9 @@ export default function Recommended() {
 			>
 				RECOMMENDED FOR YOU
 			</p>
-			{current.map((d) => {
+			{get.map((d, i) => {
 				return (
-					<div key={"d.id"} style={element}>
+					<div key={i} style={element}>
 						<div>
 							<img src={d.coverImage} alt="" style={image} />
 						</div>
@@ -60,7 +65,8 @@ export default function Recommended() {
 					</div>
 				);
 			})}
-			<BasicPagination perPage={perPage} paginate={paginate}></BasicPagination>
+			{/* <BasicPagination setPage={setPage} page={page}></BasicPagination> */}
+			<Pagination count={3} style={{ margin: "12% 33%" }} onChange={(event, value) => setPage(value)} />
 		</div>
 	);
 }

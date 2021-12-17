@@ -20,16 +20,17 @@ export default function FeaturedProject() {
 	// }
 	// console.log(res.data.projects[0]);
 	const featured = {
-		marginTop: "8.5%",
+		marginTop: "13%",
 		position: "relative",
 		width: "46%",
 		height: "48%",
 		marginLeft: "10%",
-		boxShadow: "2px 0px 0px rgba(163, 163, 163, 0.25)",
+		borderRight:"1px solid #00000026"
 	};
 	const imageBox = {
 		width: "87%",
 		marginTop: "7%",
+		// boxShadow: "0px 1px 0px rgba(163, 163, 163, 0.25)",
 	};
 	const projectTitle = {
 		fontSize: "1.9rem",
@@ -78,7 +79,6 @@ export default function FeaturedProject() {
 					</p>
 				</div>
 			</div>
-			<div style={{ border: "1px solid #A3A3A3", marginTop: "1%" }}></div>
 		</>
 	);
 }
