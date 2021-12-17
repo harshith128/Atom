@@ -23,7 +23,7 @@ export default function LogoNav() {
 	if (render) {
 		return (
 			<Box >
-				<Toolbar>
+				<Toolbar style={{backgroundColor: "white"}}>
 					<ThemeProvider theme={theme}>
 						<Typography variant="body2" className="hover">
 							Discover
