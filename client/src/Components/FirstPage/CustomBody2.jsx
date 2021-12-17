@@ -1,6 +1,7 @@
 import React from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
+// import "./FeaturedProject/FeaturedProject.css";
 
 export default function CustomBody2({arts,sx}) {
 	const theme = createTheme();
@@ -11,7 +12,7 @@ export default function CustomBody2({arts,sx}) {
 	};
 	return (
 		<ThemeProvider theme={theme}>
-			<Typography variant="body2" className={sx} >
+			<Typography variant="body2" style={{sx}} >
 				{arts}
 			</Typography>
 		</ThemeProvider>
