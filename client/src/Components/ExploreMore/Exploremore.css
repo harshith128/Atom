@@ -1,0 +1,167 @@
+* {
+    font-family: inherit;
+}
+
+.exploreSection {
+    margin-top: 16px;
+    display: flex;
+}
+.containter {
+    margin: auto;
+    width: 40%;
+}
+.text {
+    height: 22px;
+    width: 80.66667175292969px;
+    left: 0px;
+    top: 16px;
+    margin: 0 12px;
+}
+.dropdown {
+    height: 34px;
+    width: 93px;
+    left: 88.66668701171875px;
+    top: 0px;
+    border-radius: 0px;
+    padding: 2px 4px;
+    border: 1px solid black;
+}
+.btn {
+    border: none;
+    background: none;
+    color:  inherit;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+.arrow {
+    margin-left: 20px;
+}
+.dropdown-1 {
+    border: 1px solid black;
+    margin-top: 15px;
+    /* margin-left: 15%; */
+    position: absolute;
+    z-index: 1;
+    width: 40%;
+    background: white;
+}
+.categiries  div {
+    padding: 3px 2px;
+    margin-left: 10px;
+}
+
+.dropmenu-2 {
+    border: 1px solid black;
+    /* margin-left: 40%; */
+    margin-top: 15px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 20%;
+    width: 20%;
+    background: white;
+}
+.searchbar {
+    width: 90%;
+    padding: 4%;
+    height: 2px;
+}
+.cat2 {
+    width: 150%;
+}
+textarea:focus, input:focus {
+    outline: none;
+}
+.dropmenu-3 {
+    border: 1px solid black;
+    margin-top: 15px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 33%;
+    width: 7%;
+    background: white;
+}
+.cat3 {
+    width: 100%;
+}
+
+.maincontent {
+    width: 81%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.noProjects {
+    color:  #018757;
+}
+
+.grid-template {
+    width: 92%;
+    padding: 4%;
+}
+.border {
+    border: 1px solid #EBEBEB;
+
+}
+.grid-image {
+    width: 100%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.line {
+    width: 100%;
+    height: 4px;
+    background:  #018757;
+    margin: 40px 0;
+}
+
+.span {
+    margin: 10px 0;
+}
+
+.price {
+    color: #018757;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.title {
+    font-size: 22px;
+    line-height: 27px;
+    color: #282828;
+}
+
+.describe {
+    font-size: 14px;
+    line-height: 17px;
+    color: #525252;
+    font-weight: 500;
+}
+
+.fund {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #525252;
+}
+.bottom {
+    font-size: 12px;
+    line-height: 18px;
+    color: #7A7A7A;
+    margin-left: 1%;
+}
+.geo {
+    margin: 0 5%;
+}
+.sm {
+    margin: 0 1%;
+}
+
+
+
+
