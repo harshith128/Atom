@@ -6,6 +6,10 @@ import { Switch, Route } from "react-router-dom";
 import CardDetailPage from "./Components/CardDetailPage/CardDetailPage";
 import FirstPage from "./Components/FirstPage/FirstPage";
 import { DesignAndTech } from "./Components/SecondPage/DesignAndTech";
+import { Exploremore } from "./Components/ExploreMore/Exploremore";
+import { ProductPage } from "./Components/ProductPage/ProductPage";
+
+
 
 function App() {
 	return (
@@ -34,7 +38,6 @@ function App() {
 				</Route>
 				<Route exact path="/productpage">
 					<ProductPage />
-					<MenuPage />
 				</Route>
 				
 			</Switch>

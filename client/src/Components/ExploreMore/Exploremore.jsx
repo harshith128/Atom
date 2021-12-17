@@ -1,9 +1,6 @@
-// import {image} from '../images/Vector.jpg'
 import { useState } from "react";
 import "./Exploremore.css"
-// const image = require('../../../public/images/Vector.jpg')
-// const image2 = require('../../../public/images/explore.jpg');
-// const image3 = require('../../../public/images/geo.jpg')
+
 export const Exploremore = () => {
     const [show1, setShow1] = useState(false);
     const [show2, setShow2] = useState(false);

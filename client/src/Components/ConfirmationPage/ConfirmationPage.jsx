@@ -1,4 +1,5 @@
 import LogoNav from '../FirstPage/LogoNavbar/LogoNav';
+import { Footer } from '../Footer/Footer';
 import './ConfirmationPage.css';
 
 const ConfirmationPage = () => {
@@ -13,28 +14,9 @@ const ConfirmationPage = () => {
                   <span>Resend email</span>
               </div>
           </div>  
-
-
+s
             <LogoNav />
-          {/* <div className="logo_bar">
-              <div className="logo_content_1">
-                  <span>Discover</span>
-                  <span>Start a project</span>
-              </div>
-              <div className="logo_content_2">
-                  <img src="images/Logo.png" alt="" className="logo_img" />
-              </div>
-              <div className="logo_content_3">
-                  <button className="search_btn">
-                      <span>Search</span>
-                      <img src="images/search.svg" alt="" className="search_icon" />
-                  </button>
-                  
-                <img className="user_profile_pic_img" src="images/profile.png" alt="" />
-                  
-              </div>
-          </div> */}
-
+    
           <div className="content_div">
               <div className="left_content">
                   <img src="images/Evrstt Logo.png" alt="" className="everest_logo_img" />
@@ -88,6 +70,8 @@ const ConfirmationPage = () => {
             <div>Sign up to receive Invent, Kickstarter’s Design and Tech newsletter</div>
             <button className="subscribe_btn">Subscribe</button>
         </div>
+
+        <Footer />
         </>
     )
 }
