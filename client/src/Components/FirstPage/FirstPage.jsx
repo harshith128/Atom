@@ -1,7 +1,9 @@
 import React from "react";
+import FullCreator from "./CreatorSuccess/FullCreator";
 import FeaturedProject from "./FeaturedProject/FeaturedProject";
 import LogoNav from "./LogoNavbar/LogoNav";
 import MagicDivination from "./MagicDivination";
+import MakingOf from "./MakingOf";
 import Nav from "./NavBar2/Nav";
 import Recommended from "./Recommended/Recommended";
 import Section3 from "./section3/Section3";
@@ -22,6 +24,18 @@ export default function FirstPage() {
 				content="From terrific tarot decks and wizarding wands to arcane accessories,
 						eldritch electronics, sorcerous stationery, and so much more, you
 						can now find all the most spellbinding projects here in one place."
+			/>
+			<FullCreator></FullCreator>
+			<MagicDivination
+				heading="Kickstarter’s Annual Benefit Statement"
+				url="https://s3-alpha-sig.figma.com/img/de25/f3cc/08b3c6b78edf8647e582c1d7cbbe45d8?Expires=1640563200&Signature=WUC-dkU~I7Rms6ahfW8HgwJ6l8moXzYw0CdNrgYW3wvjrdzpTu6lKnGFIf~~ESCKyjexg0msoFqDVcAZP1Kl5rDuad3UrUoY7DYbs4eVekLYiwLCQXsC~JAkCu6fagTQ6o47QY8aEL3QT7xd-rT~IS~44yLbQ9aviTLO7yaAqkMTFEKCy9tGXoAmnUpYqGXnRSLo-U9L0gV0t5nAXlejXk5SbhuL5tlGgYnA0d8COu3TGMSzSWeq1zqua-Tq0Y5WDs5xB9yC7fseJ3lBrSfFS1FCddtmnaZU5chGvwogetJO-iNAkgayiZQKhhDrBKERGT-6H6CWYbbS6C9AGDtGPg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+				content="Being a Public Benefit Corporation allows us to stay focused on our mission: to help bring creative projects to life. Each year we report on how well we lived up to our commitments as a PBC."
+			/>
+			<MakingOf></MakingOf>
+			<MagicDivination
+				heading="Forword Funds"
+				url="https://s3-alpha-sig.figma.com/img/f4b9/ab05/fb98362db19943eeb062397046abe24e?Expires=1640563200&Signature=INBPYL3NAb5ekhhFQ~QNZaoz-zfqR2O9HEg1gI8RiHZAbXuUgr7K11uyUUYHIOKnjDwqiwDrhSkxN4aCf6vlBc~8Z2QwTZTrjKNl8zbDCrBB2aqB23dQuUZd9FvPMik0Dcl6mO3QDpG20-9oSKH2xp6QNvLbC62a64m8ugznECafhoVW3Pkls4biqZWZepfTjFpbX3ovRNP7dvHd1NgfywD3jVB6oSEK9uK3M1HXvWRF0BTvbJS~BYr730Y48mEup0wV7pDUBxx7s0msLLXHajGJTLHweNjPGDu8dhuvmX~q1h1T8nbbmOn7G0qRw0FehfZJp7CJsw7Aa2a-mcs4PA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+				content="Get access to funds from nonprofits and foundations that back Kickstarter campaigns related to their visions for a more creative and equitable world."
 			/>
 		</div>
 	);

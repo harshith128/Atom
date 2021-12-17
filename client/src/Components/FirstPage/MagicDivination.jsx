@@ -7,61 +7,66 @@ import CustomBody2 from "./CustomBody2";
 export default function MagicDivination({ url, heading, content }) {
 	const image = {
 		width: "50%",
+		height: "232px",
 	};
 	return (
 		<div
 			style={{
-				borderBottom: "1px solid #A3A3A3",
-				borderTop: "1px solid #A3A3A3",
+				// borderBottom: "1px solid #A3A3A3",
+				borderTop: "1px solid #ebebeb",
 			}}
 		>
 			<div
 				style={{
 					display: "flex",
-					margin: "10% 9.5%",
+					margin: "7% 9.5%",
+					marginBottom: "9%",
 				}}
 			>
 				<img src={url} style={image} alt="" />
-				<Link
-					to={"./pagination"}
-					style={{
-						position: "absolute",
-						top: "273%",
-						left: "51.6%",
-						color: "blue",
-					}}
-				>
-					Read more
-				</Link>
-				<div
-					style={{
-						borderLeft: "8px solid #018757",
-						marginLeft: "2%",
-						width: "50%",
-						height: "100%",
-						marginTop: "6px",
-					}}
-				>
-					<p
+				<div>
+					<div
 						style={{
-							fontSize: "24px",
-							textAlign: "left",
-							marginLeft: "2%",
-							marginTop: "0px",
+							borderLeft: "8px solid #018757",
+							marginLeft: "10%",
+							// width: "50%",
+							// height: "100%",
+							// marginTop: "6px",
 						}}
 					>
-						{heading}
-					</p>
-					<p
-						style={{
-							marginLeft: "2%",
-							textAlign: "left",
-							fontSize: "18px",
-							lineHeight: "22px",
-						}}
-					>
-						{content}
-					</p>
+						<p
+							style={{
+								fontSize: "24px",
+								textAlign: "left",
+								marginLeft: "7%",
+								// marginTop: "0px",
+							}}
+						>
+							{heading}
+						</p>
+						<p
+							style={{
+								
+								textAlign: "left",
+								fontSize: "18px",
+								// lineHeight: "22px",
+								marginLeft: "7%",
+							}}
+						>
+							{content}
+						</p>
+					</div>
+					<div>
+						<Link
+							to={"./pagination"}
+							style={{
+								color: "blue",
+								margin: "8% 9.5%",
+							}}
+						>
+							Read more
+						</Link>
+					</div>
 				</div>
 			</div>
 		</div>
