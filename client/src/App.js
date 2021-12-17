@@ -5,6 +5,7 @@ import ConfirmationPage from "./Components/ConfirmationPage/ConfirmationPage";
 import { Switch, Route } from "react-router-dom";
 import CardDetailPage from "./Components/CardDetailPage/CardDetailPage";
 import FirstPage from "./Components/FirstPage/FirstPage";
+import { DesignAndTech } from "./Components/SecondPage/DesignAndTech";
 
 function App() {
 	return (
@@ -12,6 +13,10 @@ function App() {
 			<Switch>
 				<Route exact path="/">
 					<FirstPage></FirstPage>
+				</Route>
+
+				<Route exact path="/category">
+					<DesignAndTech />
 				</Route>
 
 				<Route exact path="/signup">
