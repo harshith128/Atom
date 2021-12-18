@@ -43,6 +43,7 @@
     background: #018757;
     border: none;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .readme_btn{
@@ -56,6 +57,6 @@
     background: #FFFFFF;
     border: 0.3px solid #A3A3A3;
     box-sizing: border-box;
-
+    cursor: pointer;
     
 }

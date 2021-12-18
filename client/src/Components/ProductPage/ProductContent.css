@@ -81,6 +81,7 @@
 }
 .box1_para1>span{
     color: green;
+    cursor: pointer;
 }
 
 
