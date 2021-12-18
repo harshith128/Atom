@@ -8,10 +8,11 @@ import MakingOf from "./MakingOf";
 import Nav from "./NavBar2/Nav";
 import Recommended from "./Recommended/Recommended";
 import Section3 from "./section3/Section3";
+import "./firstPage.css";
 
 export default function FirstPage() {
 	return (
-		<div>
+		<div id="home-section-class">
 			<LogoNav></LogoNav>
 			<Nav></Nav>
 			<Section3></Section3>

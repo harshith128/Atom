@@ -2,7 +2,7 @@ import { AppBar, Box, Toolbar, Typography } from "@mui/material";
 
 import React, { useState } from "react";
 import "./Section.css";
-import CustomBody2 from "../CustomBody2";
+// import CustomBody2 from "../CustomBody2";
 
 export default function Section3() {
 
@@ -41,8 +41,6 @@ export default function Section3() {
 		marginTop: "14%",
 		color: "#016E47",
 	};
-
-
 
 
 	return (

@@ -1,0 +1,6 @@
+#home-section-class {
+    background-image: url("https://i.ibb.co/rcBk6sC/homeleft.png"), url("https://i.ibb.co/5jV4ZYG/homeright.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: 0%, 100%;
+  background-position-y: 4%, 3%;
+}
