@@ -1,6 +1,25 @@
+import { useState } from 'react';
 import './SignupPage.css';
+const init = {
+    username: "",
+    email: "",
+    password: "",
+    confirmPassword: ""
+}
 
 const SignupPage = () => {
+    const [signupDetails, setSignupDetails] = useState(init);
+
+    
+const handleChange = (e) => {
+    const {name, value} = e.target;
+    setSignupDetails({...signupDetails, [name]: value});
+}
+
+const handleSignUp = () => {
+    console.log(signupDetails);
+}
+    
     return (
         <div className="Container">
             <div className="top__bar">
@@ -16,10 +35,10 @@ const SignupPage = () => {
             <div className="signup__box">
                 <div className="ctreate_account">
                     <span className='heading_span'>Create an account</span>
-                    <input type="text" name="" className='ctreate_account_input' placeholder='Name' />
-                    <input type="email" name="" className='ctreate_account_input' placeholder='Email' />
-                    <input type="password" name="" className='ctreate_account_input' placeholder='Password' />
-                    <input type="password" name="" className='ctreate_account_input' placeholder='Confirm Password' />
+                    <input onChange={ handleChange } type="text" name="username" className='ctreate_account_input' placeholder='Name' />
+                    <input onChange={ handleChange } type="email" name="email" className='ctreate_account_input' placeholder='Email' />
+                    <input onChange={ handleChange } type="password" name="password" className='ctreate_account_input' placeholder='Password' />
+                    <input onChange={ handleChange } type="password" name="confirmPassword" className='ctreate_account_input' placeholder='Confirm Password' />
 
                     <div className="check_div">
                         <input type="checkbox" name="" id="" />
@@ -32,7 +51,7 @@ const SignupPage = () => {
                         <span>Contact me about participating in Kickstarter research</span>
                     </div>
 
-                    <button className='create_account_btn'>Create account</button>
+                    <button onClick={handleSignUp} className='create_account_btn'>Create account</button>
 
                     <div className="privacy_policy">
                         By signing up, you agree to our <span>Privacy Policy, Cookie Policy</span> and  <span>Terms of Use.</span> 
