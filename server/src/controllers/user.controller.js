@@ -2,6 +2,7 @@ const express = require("express");
 // const router = express.Router();
 const { nanoid } = require("nanoid");
 var jwt = require('jsonwebtoken');
+const { validationResult } = require('express-validator');
 
 const User = require("../models/user.model");
 
@@ -10,8 +11,21 @@ const newtoken = (user) => {
 }
 
 const signUp = async(req, res) => {
+
     let user;
     try {
+        console.log(req.body)
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            let finalEroor =  errors.array().map((err) => {
+                return {
+                    msg: err.msg,
+                    param: err.param
+                }
+            })
+            return res.status(400).json({ errors: finalEroor });
+        }
+
         user = await User.findOne({email: req.body.email});
         if(user) {
             return res.status(400).send({message: "email found"});
@@ -21,8 +35,6 @@ const signUp = async(req, res) => {
             ...req.body,
             userId: nanoid(8),
         });
-
-        delete user.password;
 
         const token = newtoken(user);
 
