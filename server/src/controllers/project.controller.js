@@ -38,7 +38,11 @@ router.get("/random", async(req, res) => {
 
 router.get("/recommended", async(req, res) => {
     try {
-        const projects = await Project.aggregate([{$sample: {size: 9}}]);
+        const page = req.query.page || 1;
+        const size = 3;
+        const offset = (page - 1) * size;
+
+        const projects = await Project.aggregate([{ $skip: offset }, { $limit: size }]);
         res.status(200).send({ projects });
     } catch (error) {
         return res.status(400).send({ error: error.message });
