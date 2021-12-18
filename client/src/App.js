@@ -8,6 +8,7 @@ import FirstPage from "./Components/FirstPage/FirstPage";
 import { DesignAndTech } from "./Components/SecondPage/DesignAndTech";
 import { Exploremore } from "./Components/ExploreMore/Exploremore";
 import { ProductPage } from "./Components/ProductPage/ProductPage";
+import LoginPage from "./Components/LoginPage/Login";
 
 
 
@@ -26,6 +27,11 @@ function App() {
 				<Route exact path="/signup">
 					<SignupPage />
 				</Route>
+
+				<Route exact path="/login">
+					<LoginPage />
+				</Route>
+
 				<Route exact path="/carddetail">
 					<CardDetailPage />
 				</Route>

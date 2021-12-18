@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useState } from 'react';
 import './SignupPage.css';
 const init = {
@@ -11,15 +12,29 @@ const SignupPage = () => {
     const [signupDetails, setSignupDetails] = useState(init);
 
     
-const handleChange = (e) => {
+const handleSignupChange = (e) => {
     const {name, value} = e.target;
     setSignupDetails({...signupDetails, [name]: value});
 }
 
-const handleSignUp = () => {
-    console.log(signupDetails);
+const handleSignUp = async() => {
+    const data = await fetch("http://localhost:2357/signup",{
+        method: "POST",
+        headers: {
+            "content-type": "application/json"
+        },
+        body: JSON.stringify(signupDetails)
+    })
+    const dt = await data.json();
+    if(data.status === 201){
+        const { user, token } = dt;
+        console.log(user, token);
+        alert("signup in successful");
+    } else {
+        alert("something went wrong");
+    }
 }
-    
+
     return (
         <div className="Container">
             <div className="top__bar">
@@ -35,10 +50,10 @@ const handleSignUp = () => {
             <div className="signup__box">
                 <div className="ctreate_account">
                     <span className='heading_span'>Create an account</span>
-                    <input onChange={ handleChange } type="text" name="username" className='ctreate_account_input' placeholder='Name' />
-                    <input onChange={ handleChange } type="email" name="email" className='ctreate_account_input' placeholder='Email' />
-                    <input onChange={ handleChange } type="password" name="password" className='ctreate_account_input' placeholder='Password' />
-                    <input onChange={ handleChange } type="password" name="confirmPassword" className='ctreate_account_input' placeholder='Confirm Password' />
+                    <input onChange={ handleSignupChange } type="text" name="username" className='ctreate_account_input' placeholder='Name' />
+                    <input onChange={ handleSignupChange } type="email" name="email" className='ctreate_account_input' placeholder='Email' />
+                    <input onChange={ handleSignupChange } type="password" name="password" className='ctreate_account_input' placeholder='Password' />
+                    <input onChange={ handleSignupChange } type="password" name="confirmPassword" className='ctreate_account_input' placeholder='Confirm Password' />
 
                     <div className="check_div">
                         <input type="checkbox" name="" id="" />
