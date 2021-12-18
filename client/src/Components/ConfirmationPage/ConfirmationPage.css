@@ -282,8 +282,36 @@
 .project_content{
     width: 100%;
     height: 570px;
-    border: 1px solid red;
 }
+
+.more_project_div{
+    width: 420px;
+    height: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 62px;
+    margin-left: 90px;
+    margin-bottom: 50px;
+}
+.head_more_{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+.more_project_span{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
 .advertising_poster{
     width: 100%;
     height: 264px;
@@ -292,7 +320,6 @@
 .below_poster_div{
     width: 100%;
     height: 398px;
-    border: 1px solid rgb(255, 0, 157);
     display: flex;
     flex-direction: column;
     align-items: center;
