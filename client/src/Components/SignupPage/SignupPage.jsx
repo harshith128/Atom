@@ -1,21 +1,15 @@
 import axios from 'axios';
 import { useState } from 'react';
 import './SignupPage.css';
-const init1 = {
+const init = {
     username: "",
     email: "",
     password: "",
     confirmPassword: ""
 }
 
-const init2 = {
-    email: "",
-    password: "",
-}
-
 const SignupPage = () => {
-    const [signupDetails, setSignupDetails] = useState(init1);
-    const [loginDetails, setLodindetails] = useState(init2);
+    const [signupDetails, setSignupDetails] = useState(init);
 
     
 const handleSignupChange = (e) => {
@@ -40,30 +34,6 @@ const handleSignUp = async() => {
         alert("something went wrong");
     }
 }
-
-const handleLoginChange = (e) => {
-    const {name, value} = e.target;
-    setLodindetails({...loginDetails, [name]: value});
-}
-
-const handleLogin = async() => {
-    const data = await fetch("http://localhost:2357/login",{
-        method: "POST",
-        headers: {
-            "content-type": "application/json"
-        },
-        body: JSON.stringify(loginDetails)
-    })
-    const dt = await data.json();
-    if(data.status === 201){
-        const { user, token } = dt;
-        console.log(user, token);
-        alert("logged in successful");
-    } else {
-        alert("something went wrong");
-    }
-}
-
 
     return (
         <div className="Container">
