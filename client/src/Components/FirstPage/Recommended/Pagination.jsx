@@ -1,4 +1,5 @@
 // import React from 'react'
+import "./pagination.css";
 
 // export default function Pagination({ perPage, Total }) {
 
@@ -17,10 +18,8 @@ import * as React from "react";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 
-export default function BasicPagination({ setPage, page }) {
-    const handleChange = (page) => {
-        
-    }
+export default function BasicPagination({ page }) {
+
 	return (
 		<Stack spacing={2}>
             <Pagination

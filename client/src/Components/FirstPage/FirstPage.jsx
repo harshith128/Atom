@@ -1,4 +1,5 @@
 import React from "react";
+import { Footer } from "../Footer/Footer";
 import FullCreator from "./CreatorSuccess/FullCreator";
 import FeaturedProject from "./FeaturedProject/FeaturedProject";
 import LogoNav from "./LogoNavbar/LogoNav";
@@ -37,6 +38,7 @@ export default function FirstPage() {
 				url="https://s3-alpha-sig.figma.com/img/f4b9/ab05/fb98362db19943eeb062397046abe24e?Expires=1640563200&Signature=INBPYL3NAb5ekhhFQ~QNZaoz-zfqR2O9HEg1gI8RiHZAbXuUgr7K11uyUUYHIOKnjDwqiwDrhSkxN4aCf6vlBc~8Z2QwTZTrjKNl8zbDCrBB2aqB23dQuUZd9FvPMik0Dcl6mO3QDpG20-9oSKH2xp6QNvLbC62a64m8ugznECafhoVW3Pkls4biqZWZepfTjFpbX3ovRNP7dvHd1NgfywD3jVB6oSEK9uK3M1HXvWRF0BTvbJS~BYr730Y48mEup0wV7pDUBxx7s0msLLXHajGJTLHweNjPGDu8dhuvmX~q1h1T8nbbmOn7G0qRw0FehfZJp7CJsw7Aa2a-mcs4PA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
 				content="Get access to funds from nonprofits and foundations that back Kickstarter campaigns related to their visions for a more creative and equitable world."
 			/>
+			<Footer />
 		</div>
 	);
 }
