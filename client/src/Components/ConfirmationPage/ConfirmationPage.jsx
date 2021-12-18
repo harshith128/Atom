@@ -1,5 +1,6 @@
 import LogoNav from '../FirstPage/LogoNavbar/LogoNav';
 import { Footer } from '../Footer/Footer';
+import { DisplayProjects } from '../ProjectDisplay/DisplaySideScroll';
 import './ConfirmationPage.css';
 
 const ConfirmationPage = () => {
@@ -59,7 +60,12 @@ s
         
         
         <div className="project_content">
-              <h1>space for fetching the data from backend</h1>
+              {/* <h1>space for fetching the data from backend</h1> */}
+              <div className="more_project_div">
+                <div className="head_more_">More projects are coming to life-be part of them</div>
+                <span className="more_project_span">Here are a few recommendations just for you</span>
+              </div>
+              <DisplayProjects />
         </div>
         <div className='advertising_poster'>
             <img className='advertising_poster' src="images/advertising1.jpg" alt="advertising poster" />
