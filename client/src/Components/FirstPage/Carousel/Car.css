@@ -1,0 +1,34 @@
+.rec-arrow-left {
+	background-color: white;
+	position: relative;
+	top: -62%;
+	left: 80%;
+}
+.rec-arrow-right {
+	background-color: white;
+    position: relative;
+    top: -62%;
+    left: -9%;
+}
+.cNNJIt {
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	font-size: 1.6em;
+	/* background-color: rgba(103,58,183,0.1); */
+	color: #999;
+	/* box-shadow: 0 0 2px 0px #333; */
+	/* border-radius: 22%; */
+	border: none;
+	padding: 0;
+	width: 15px;
+	height: 50px;
+	min-width: 50px;
+	line-height: 50px;
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+	cursor: pointer;
+	outline: none;
+}
+
