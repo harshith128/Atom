@@ -1,20 +1,18 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import BasicPagination from "./Pagination";
 import Pagination from "@mui/material/Pagination";
 
 export default function Recommended() {
 	const [get, setGet] = useState([]);
 	const [page, setPage] = useState(1);
-	const [perPage, setPerPage] = useState(3);
+
 	useEffect(() => {
 		const fetchData = async () => {
 			// const res = await axios.get(`http://localhost:2357/projects/random?_page=${page}&_limit=2`);
 			const res = await fetch(
-				`http://localhost:2357/projects/random?_page=${page}`
+				`http://localhost:2357/projects/recommended?page=${page}`
 			).then((d) => d.json());
 			setGet(res.projects);
-			// console.log(res.projects);
 		};
 		fetchData();
 	}, [page]);
