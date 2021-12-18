@@ -1,4 +1,5 @@
 import React from "react";
+import CreatorsCorner from "./CreatorsCorner/CreatorsCorner";
 import FullCreator from "./CreatorSuccess/FullCreator";
 import FeaturedProject from "./FeaturedProject/FeaturedProject";
 import LogoNav from "./LogoNavbar/LogoNav";
@@ -32,6 +33,8 @@ export default function FirstPage() {
 				content="Being a Public Benefit Corporation allows us to stay focused on our mission: to help bring creative projects to life. Each year we report on how well we lived up to our commitments as a PBC."
 			/>
 			<MakingOf></MakingOf>
+
+			<CreatorsCorner/>
 			<MagicDivination
 				heading="Forword Funds"
 				url="https://s3-alpha-sig.figma.com/img/f4b9/ab05/fb98362db19943eeb062397046abe24e?Expires=1640563200&Signature=INBPYL3NAb5ekhhFQ~QNZaoz-zfqR2O9HEg1gI8RiHZAbXuUgr7K11uyUUYHIOKnjDwqiwDrhSkxN4aCf6vlBc~8Z2QwTZTrjKNl8zbDCrBB2aqB23dQuUZd9FvPMik0Dcl6mO3QDpG20-9oSKH2xp6QNvLbC62a64m8ugznECafhoVW3Pkls4biqZWZepfTjFpbX3ovRNP7dvHd1NgfywD3jVB6oSEK9uK3M1HXvWRF0BTvbJS~BYr730Y48mEup0wV7pDUBxx7s0msLLXHajGJTLHweNjPGDu8dhuvmX~q1h1T8nbbmOn7G0qRw0FehfZJp7CJsw7Aa2a-mcs4PA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
