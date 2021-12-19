@@ -11,8 +11,7 @@ import { ProductPage } from "./Components/ProductPage/ProductPage";
 import LoginPage from "./Components/LoginPage/Login";
 import { Rewards } from "./Components/RewardPage/Rewards";
 import { Rewardconformation } from "./Components/RewardPage/Rewardsconformation";
-
-
+import { Explore } from "./Components/SecondPage/Explore";
 
 function App() {
 	return (
@@ -24,6 +23,12 @@ function App() {
 
 				<Route exact path="/category">
 					<DesignAndTech />
+				</Route>
+				{/* <Route exact path="/explore">
+					<Explore></Explore>
+				</Route> */}
+				<Route exact path="/product">
+					<Explore></Explore>
 				</Route>
 
 				<Route exact path="/signup">
@@ -50,11 +55,9 @@ function App() {
 				<Route path="/reward">
 					<Rewards />
 				</Route>
-				<Route path="/rewardConfirmation">
+				<Route path="/rewardconformationpage">
 					<Rewardconformation />
 				</Route>
-		
-				
 			</Switch>
 		</div>
 	);

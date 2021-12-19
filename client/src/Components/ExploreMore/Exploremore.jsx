@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import "./Exploremore.css"
+import { Link } from "react-router-dom";
 
 export const Exploremore = () => {
     const [show1, setShow1] = useState(false);
@@ -88,7 +89,7 @@ export const Exploremore = () => {
                         <img src="images/explore.jpg" alt="" className="grid-image" />
                     </div>
                     <div className="innerborder">
-                    <div className="span title">Boxx | Bringing the Boxing Studio Home</div>
+                    <div className="span title"><Link to="/productpage">Boxx | Bringing the Boxing Studio Home</Link></div>
                     <div className="span describe">Beautifillay designed punch bag and smart trackers. Take your at-home boxing workout to the next level.</div>
                     <div className="span describe author">by Boxx</div>
                     <div className="line"></div>

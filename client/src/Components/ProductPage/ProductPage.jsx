@@ -2,6 +2,7 @@ import { Footer } from "../Footer/Footer";
 import ProductContent from "./ProductContent";
 import ProductNav from "./ProductNav";
 import "./ProductPage.css";
+import { Link } from "react-router-dom";
 
 export const ProductPage = () => {
     return (
@@ -41,7 +42,7 @@ export const ProductPage = () => {
                                 <div className="pledge">days to go</div>
                             </div>
                             <div className="back-btn">
-                                <button className="project-btn">Back this Project</button>
+                                <button className="project-btn"><Link to="/reward">Back this project</Link></button>
                             </div>
                             <div className="below-btn">
                                 <div>
