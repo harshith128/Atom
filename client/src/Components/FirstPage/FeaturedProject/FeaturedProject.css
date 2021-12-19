@@ -7,5 +7,30 @@
 .projectImage {
 	margin-top: 2%;
 	width: 100%;
+	max-height: 320px;
+	padding-bottom: 0;
+	margin-bottom: -4px;
+}
+
+.peo-feat-name {
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.pro-home-name:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	color: #018757;
+}
+
+.featured-dummy-bar {
+	width: 100%;
+	color: #EBEBEB;
+	height: 5px;
+}
+
+.bar-inside {
+	color: #018757;
+	height: 5px;
 }
 

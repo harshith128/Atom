@@ -26,4 +26,15 @@ router.post("", async(req, res) => {
     }
 })
 
+router.patch("/:id", async(req, res) => {
+    console.log(req.params.id)
+    try {
+        const product = await Product.findByIdAndUpdate(req.params.id, req.body, {new: true}).lean().exec();
+
+        return res.status(200).send({ product });
+    } catch (error) {
+        return res.status(400).send({ error: error.message });
+    }
+})
+
 module.exports = router;

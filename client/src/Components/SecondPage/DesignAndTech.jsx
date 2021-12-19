@@ -40,7 +40,8 @@ export const DesignAndTech = () => {
 					From fine design to innovative tech, discover projects from creators
 					working to build a more beautiful feature
 				</p>
-				<span style={{marginLeft:"11%",color:"blue"}}><Link to="/exploremore">Explore Design</Link></span>
+				
+				<Link to="/exploremore"><span style={{ marginLeft: "11%", color: "blue" }}>Explore Design</span></Link>
 				<span style={{marginLeft:"3%",color:"blue",marginBottom:"0px"}}>Explore Technology</span>
 			</div>
 			<div style={{ display: "flex", marginTop: "0%" }}>

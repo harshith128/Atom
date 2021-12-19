@@ -1,7 +1,10 @@
-.hover:hover{
+.pro-cal-name:hover{
+	color: #018757;
 	text-decoration: underline;
-	text-decoration-color: #282828;
 	/* color:#282828 */
+}
+.dummy-bar-home {
+	width: 100%;
 }
 .link{
 	color: #003BFF;
@@ -42,7 +45,7 @@ button.rec-arrow{
 	/* background-color: rgb(185, 49, 49); */
 	 box-shadow: none;
 	 border-radius: 0%;
-	 background-color: red;
+	 background-color: white;
 	 /* color: #003BFF; */
 	 padding: 0%;
 

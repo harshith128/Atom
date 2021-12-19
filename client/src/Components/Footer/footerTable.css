@@ -26,6 +26,6 @@
 
 .each-cell:hover {
     text-decoration: underline;
-    color: green;
+    color: #018757;
     cursor: pointer;
 }

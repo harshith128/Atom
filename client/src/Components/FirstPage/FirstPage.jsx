@@ -19,7 +19,7 @@ export default function FirstPage() {
 			<LogoNav></LogoNav>
 			<Nav></Nav>
 			<Section3></Section3>
-			<div style={{ display: "flex" }}>
+			<div className="home-feat">
 				<FeaturedProject></FeaturedProject>
 				<Recommended></Recommended>
 			</div>
