@@ -3,10 +3,13 @@ import ProductContent from "./ProductContent";
 import ProductNav from "./ProductNav";
 import "./ProductPage.css";
 import { Link } from "react-router-dom";
+import LogoNav from "../FirstPage/LogoNavbar/LogoNav";
 
 export const ProductPage = () => {
     return (
         <div>
+
+            <LogoNav />
             <div className="top-content">
                 <div className="heading">
                     <div className="title1">ORCA Pot-One pot fits all</div>
