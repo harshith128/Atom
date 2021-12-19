@@ -87,6 +87,7 @@
     align-items: center;
     padding: 12px 120px;
     background: #018757;
+    color: white;
 }
 .back-btn:hover{
     background: #074d34;
