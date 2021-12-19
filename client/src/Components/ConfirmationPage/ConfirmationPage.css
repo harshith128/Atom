@@ -278,6 +278,9 @@
 .icon_common_class{
     margin-right: 6px;
 }
+.icon_common_class:hover{
+    background: #000;
+}
 
 .project_content{
     width: 100%;
@@ -355,4 +358,9 @@
     color: #FFFFFF;
     margin-top: 48px;
     cursor: pointer;
+}
+.subscribe_btn:hover{
+    background:#000000;
+    color: #FFFFFF;
+    
 }

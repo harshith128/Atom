@@ -15,7 +15,7 @@ const ConfirmationPage = () => {
                   <span>Resend email</span>
               </div>
           </div>  
-s
+
             <LogoNav />
     
           <div className="content_div">

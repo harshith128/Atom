@@ -21,7 +21,12 @@ const CardDetailPage = () => {
                 </div>
 
                 <div className="product_detail_card">
-                    <img src="" alt="" />
+                    <img src="images/fire_img.jpg" alt="" />
+                    <div className="project_summary_div">
+                        <p className="summary_heading">ORCA Pot-One fits all</p>
+                        <span className="summary_percentage">543% funded</span>
+                        <span className="everest_summary">By Everstt</span>
+                    </div>
                 </div>
 
                 <div className="heading1_card">

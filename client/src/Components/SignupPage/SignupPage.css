@@ -105,6 +105,11 @@
     margin: 8px 0px;
     margin-left: 24px;
 }
+.ctreate_account_input:hover{
+    border:1px solid #056845;
+}
+
+
 
 .check_div{
     width: 393px;
@@ -145,6 +150,9 @@
     width: 430px;
     height: 40px;
 }
+.create_account_btn:hover{
+    background: #056845;
+}
 
 .privacy_policy{
     width: 448px;
@@ -175,6 +183,9 @@
     margin-left: 32px;
     cursor: pointer;
 }
+.readmore_span:hover{
+    text-decoration: underline  #003BFF;
+}
 
 
 .more_option{
@@ -197,6 +208,9 @@
     margin: 24px auto 8px auto;
     border: none;
 }
+.login_btn:hover{
+    background: #056845;
+}
 
 .fb_btn{
     display: flex;  
@@ -211,6 +225,9 @@
     width: 430px;
     margin: 8px auto;
     border: none;
+}
+.fb_btn:hover{
+    background: #213c74;
 }
 
 .get_notified{

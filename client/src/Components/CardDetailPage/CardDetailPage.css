@@ -50,10 +50,51 @@
 .product_detail_card{
     width: 512px;
     height: 150px;
-    border: 1px solid rgb(221, 218, 218);
     margin-left: 122px;
     margin-top: 40px;
+    display: flex;
+    
 }
+.product_detail_card>img{
+    width: 234px;
+    height: 79px;
+}
+
+.project_summary_div{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 80px;
+    margin-left: 100px;
+}
+.summary_heading{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    text-decoration-line: underline;
+    color: #525252;
+}
+
+.summary_percentage{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #018757;
+}
+.everest_summary{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    color: #7A7A7A;
+}
+
 
 .heading1_card{
     width: 132px;

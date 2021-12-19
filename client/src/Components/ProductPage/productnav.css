@@ -44,7 +44,12 @@
     border: none;
     margin-right: 20px;
     cursor: pointer;
+    color: #FFFFFF;
 }
+.backthis_btn:hover{
+    background: #094b34;
+}
+
 
 .readme_btn{
     display: flex;
@@ -59,4 +64,8 @@
     box-sizing: border-box;
     cursor: pointer;
     
+}
+
+.readme_btn:hover{
+    box-shadow: 1px 1px 5px grey;
 }

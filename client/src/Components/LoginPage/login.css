@@ -23,6 +23,9 @@
     margin-left: 39px;
     margin-top: 16px;
 }
+.login_cont>input:hover{
+    border:1px solid #056845;
+}
 .login_cont>span{
     font-family: Inter;
     font-style: normal;
@@ -66,7 +69,15 @@
     color: #FFFFFF;
     border: none;
     margin-top: 32px;
+    width: 430px;
+    height: 40px;
+    margin: auto;
 }
+.login1_btn:hover{
+    background: #0d6949;
+}
+
+
 .lines{
     width: 340px;
     display: flex;
@@ -90,7 +101,14 @@
     color: #FFFFFF;
     border: none;
     margin-top: 10px;
+    width: 430px;
+    height: 40px;
+    margin: auto;
 }
+.fb1_btn:hover{
+    background: #4065dd;
+}
+
 
 .google_login_btn{
     display: flex;
@@ -102,6 +120,12 @@
     border: none;
     color: #FFFFFF;
     margin-top: 16px;
+    width: 430px;
+    height: 40px;
+    margin: auto;
+}
+.google_login_btn:hover{
+    background: #4065dd;
 }
 
 .login_para{
