@@ -3,6 +3,9 @@
 	text-decoration: underline;
 	/* color:#282828 */
 }
+.dummy-bar-home {
+	width: 100%;
+}
 .link{
 	color: #003BFF;
 	font-weight:500;

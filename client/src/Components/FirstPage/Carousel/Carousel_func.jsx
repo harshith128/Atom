@@ -34,8 +34,8 @@ export default function Carousel_func({ title }) {
 	}, []);
 	// console.log(details);
 	// console.log("details:", details);
-	const random = () => {
-		return Math.floor(Math.random() * 100) + 10;
+	const randomOne = () => {
+		return Math.floor(Math.random() * 100);
 	};
 
 	// return <div></div>;
@@ -62,14 +62,16 @@ export default function Carousel_func({ title }) {
 						<>
 							<div style={styles}>
 								<img style={{height: "148px"}} src={e.coverImage} alt="" />
+								<div className="dummy-bar-home">
 								<div
 									style={{
-										width: random(),
+										width: `${randomOne()}%`,
 										height: "6px",
 										backgroundColor: "#018757",
 										color: "white",
 									}}
 								></div>
+								</div>
 								<div className="hover">
 									<p
 										style={{

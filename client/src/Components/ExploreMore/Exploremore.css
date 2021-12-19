@@ -42,6 +42,12 @@ color: #282828;
     padding: 2px 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+
+    width: 113px;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 .btn {
     border: none;
@@ -51,6 +57,11 @@ color: #282828;
     font: inherit;
     cursor: pointer;
     outline: inherit;
+    width: 113px;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 .arrow {
     margin-left: 20px;
