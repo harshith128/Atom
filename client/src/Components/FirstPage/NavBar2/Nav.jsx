@@ -14,6 +14,7 @@ export default function Nav() {
 					border: "1px solid #EBEBEB",
 				}}
 			>
+				<div  className="nav-box-cont">
 				<Toolbar
 					sx={{
 						display: "flex",
@@ -33,7 +34,7 @@ export default function Nav() {
 					<CustomBody2 sx={"nav"} arts={"Publishing"} /> */}
 					<div className="family" >Arts</div>
 					<div className="family">Comics and Illustrations</div>
-					<div className="family"><Link to="/category" style={{textDecoration:"none"}}>Design & Tech</Link></div>
+					<div className="family"><Link to="/category" style={{textDecoration:"none"}} className="designTech">Design & Tech</Link></div>
 					<div className="family">Film</div>
 					<div className="family">Food & Craft</div>
 					<div className="family">Games</div>
@@ -42,6 +43,7 @@ export default function Nav() {
 					
 					
 				</Toolbar>
+				</div>
 			</div>
 		</Box>
 	);

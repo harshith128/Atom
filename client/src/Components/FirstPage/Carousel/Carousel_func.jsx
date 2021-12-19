@@ -35,7 +35,7 @@ export default function Carousel_func({ title }) {
 	// console.log(details);
 	// console.log("details:", details);
 	const random = () => {
-		return Math.floor(Math.random() * 100);
+		return Math.floor(Math.random() * 100) + 10;
 	};
 
 	// return <div></div>;
@@ -44,6 +44,7 @@ export default function Carousel_func({ title }) {
 			style={{
 				borderTop: "1px solid #ebebeb",
 				borderBottom: "1px solid #ebebeb",
+				paddingBottom: "50px",
 			}}
 		>
 			<div style={{ marginTop: "8%" }}>
@@ -60,7 +61,7 @@ export default function Carousel_func({ title }) {
 					{details.map((e) => (
 						<>
 							<div style={styles}>
-								<img src={e.coverImage} alt="" />
+								<img style={{height: "148px"}} src={e.coverImage} alt="" />
 								<div
 									style={{
 										width: random(),
@@ -72,10 +73,11 @@ export default function Carousel_func({ title }) {
 								<div className="hover">
 									<p
 										style={{
+											fontSize: "16px",
 											textAlign: "left",
-											color: "#282828",
 											fontFamily: "Inter, sans-serif",
 										}}
+										className="pro-cal-name"
 									>
 										{e.projectName}
 									</p>
@@ -94,6 +96,7 @@ export default function Carousel_func({ title }) {
 								</p>
 								<p
 									style={{
+										fontSize: "12px",
 										textAlign: "left",
 										color: "#A3A3A3",
 										marginTop: "5%",

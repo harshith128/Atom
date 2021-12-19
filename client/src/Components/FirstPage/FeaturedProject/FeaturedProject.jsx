@@ -6,6 +6,10 @@ import axios from "axios";
 export default function FeaturedProject() {
 	const [res, setRes] = useState([]);
 
+	const random = () => {
+		return Math.floor(Math.random() * 100);
+	};
+
 	useEffect(() => {
 		const fetchData = async () => {
 			const ans = await axios.get("http://localhost:2357/projects/random");
@@ -20,7 +24,7 @@ export default function FeaturedProject() {
 	// }
 	// console.log(res.data.projects[0]);
 	const featured = {
-		marginTop: "6%",
+		marginTop: "100px",
 		position: "relative",
 		width: "46%",
 		height: "48%",
@@ -33,17 +37,20 @@ export default function FeaturedProject() {
 		// boxShadow: "0px 1px 0px rgba(163, 163, 163, 0.25)",
 	};
 	const projectTitle = {
-		fontSize: "1.9rem",
+		fontSize: "24px",
 		lineHeight: "2.2rem",
 		marginLeft: "1%",
 		textAlign: "left",
 		wordWrap: "normal",
+		fontWeight: "400",
 	};
 	const projectDesc = {
-		fontSize: "1.3rem",
+		fontSize: "16px",
+		marginTop: "10px",
 		marginLeft: "1%",
 		textAlign: "left",
 		wordWrap: "normal",
+		fontWeight: "400",
 	};
 	return (
 		<>
@@ -56,6 +63,7 @@ export default function FeaturedProject() {
 							marginLeft: "1%",
 							textAlign: "left",
 							fontWeight: 500,
+							fontSize: "14px",
 						}}
 					>
 						FEATURED PROJECT
@@ -65,12 +73,20 @@ export default function FeaturedProject() {
 						alt=""
 						className="projectImage"
 					/>
-					<p style={projectTitle}>{res.projectName}</p>
+					<div
+						style={{
+							width: random(),
+							height: "6px",										backgroundColor: "#018757",
+							color: "white",
+							margin: "0px",
+							}}
+					></div>
+					<p className="pro-home-name" style={projectTitle}>{res.projectName}</p>
 					<p style={projectDesc}>{res.description}</p>
 					<p
 						style={{
-							fontSize: "0.7rem",
-							marginTop: "3rem",
+							fontSize: "12px",
+							marginTop: "10px",
 							textAlign: "left",
 							marginLeft: "1%",
 						}}

@@ -1,6 +1,6 @@
-.hover:hover{
+.pro-cal-name:hover{
+	color: #018757;
 	text-decoration: underline;
-	text-decoration-color: #282828;
 	/* color:#282828 */
 }
 .link{

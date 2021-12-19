@@ -9,7 +9,13 @@
 .family{
     font-family: 'Inter',sans-serif;
 }
-.family:hover{
+.designTech:hover, .family:hover{
     color: #018757;
     text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav-box-cont {
+    width: 80%;
+    margin: auto;
 }

@@ -25,6 +25,7 @@
 }
 .hover:hover {
 	color: #018757;
+	cursor: pointer;
 }
 #forFlex img:hover {
 	color: #018757;
