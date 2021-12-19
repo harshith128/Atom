@@ -2,7 +2,7 @@ import axios from "axios";
 import Stack from "@mui/material/Stack";
 import { useEffect, useState } from "react";
 import "./explore.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export const Explore = ({ subCategory, category }) => {
 	const [subCategorydata, setSubCategoryData] = useState([]);

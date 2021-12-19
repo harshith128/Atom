@@ -296,6 +296,24 @@ color: #018757;
     cursor: pointer;
 }
 
+.cat-cont {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    gap: 3%;
+}
+
+.display-data {
+    width: 100%;
+}
+
+.image-cover {
+    width: 100%;
+    max-height: 220px;
+}
+
 
 
 

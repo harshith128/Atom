@@ -10,9 +10,11 @@ app.use(cors());
 app.options('*', cors());
 
 const projectController = require("./controllers/project.controller");
+const productController = require("./controllers/product.controller");
 const { signUp, login } = require("./controllers/user.controller");
 
 app.use("/projects", projectController);
+app.use("/products", productController);
 
 app.post("/signup",
 
