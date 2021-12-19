@@ -331,6 +331,9 @@ color: #018757;
     align-items: center;
     color: #282828;
 }
+.productName:hover{
+    text-decoration: underline;
+}
 .description{
     font-family: Inter;
     font-style: normal;
