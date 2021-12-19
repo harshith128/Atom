@@ -64,7 +64,7 @@ export default function MagicDivination({ url, heading, content,sub }) {
 							style={{
 								color: "blue",
 								margin: "8% 9.5%",
-								marginLeft: "110px"
+								marginLeft: "10%"
 							}}
 						>
 							Read more
