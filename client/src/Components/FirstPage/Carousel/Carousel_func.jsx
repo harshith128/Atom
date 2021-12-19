@@ -4,7 +4,7 @@ import Carousel from "react-elastic-carousel";
 
 import "./Car.css";
 
-export default function Carousel_func({title}) {
+export default function Carousel_func({ title }) {
 	const [details, setDetails] = useState([]);
 	const breakPoints = [
 		{ width: 1, itemsToShow: 1 },
@@ -17,7 +17,7 @@ export default function Carousel_func({title}) {
 		display: "flex",
 		height: "311px",
 		width: "100%",
-		margin: "0 15px",
+		margin: "0 2%",
 		borderRadius: "20px",
 		// boxShadow: "2px 1px 5px 1px grey",
 		flexDirection: "column",
@@ -35,7 +35,7 @@ export default function Carousel_func({title}) {
 	console.log("details:", details);
 	const random = () => {
 		return Math.floor(Math.random() * 100);
-	}
+	};
 
 	// return <div></div>;
 	return (
@@ -43,14 +43,16 @@ export default function Carousel_func({title}) {
 			style={{
 				borderTop: "1px solid #ebebeb",
 				borderBottom: "1px solid #ebebeb",
-				
-				
 			}}
 		>
 			<div style={{ marginTop: "8%" }}>
-				<div style={{display:"flex",marginLeft:"5.5%"}}>
-					<h3 style={{ color: "##000000",fontFamily:"Inter, sans-serif" }}>{title}</h3>
-					<a href="./" className="link"><p style={{color:"#003BFF"}}>Discover More</p></a>
+				<div style={{ display: "flex", marginLeft: "5.5%" }}>
+					<h3 style={{ color: "##000000", fontFamily: "Inter, sans-serif" }}>
+						{title}
+					</h3>
+					<a href="./" className="link">
+						<p style={{ color: "#003BFF" }}>Discover More {">"}</p>
+					</a>
 				</div>
 
 				<Carousel breakPoints={breakPoints}>
@@ -58,12 +60,47 @@ export default function Carousel_func({title}) {
 						<>
 							<div style={styles}>
 								<img src={e.coverImage} alt="" />
-								<div style={{width:random() ,height:"6px",backgroundColor:"#018757",color:"white"}}></div>
+								<div
+									style={{
+										width: random(),
+										height: "6px",
+										backgroundColor: "#018757",
+										color: "white",
+									}}
+								></div>
 								<div className="hover">
-									<p style={{textAlign:"left",color:"#282828",fontFamily:"Inter, sans-serif" }}>{e.projectName}</p>
+									<p
+										style={{
+											textAlign: "left",
+											color: "#282828",
+											fontFamily: "Inter, sans-serif",
+										}}
+									>
+										{e.projectName}
+									</p>
 								</div>
-								<p style={{textAlign:"left",color:"#282828",marginBottom:"0px",marginTop:"2%",fontFamily:"Inter, sans-serif",fontSize:"12px" }}>{e.description}</p>
-								<p style={{textAlign:"left",color:"#A3A3A3",marginTop:"5%",fontFamily:"Inter, sans-serif" }}>By {e.creator}</p>
+								<p
+									style={{
+										textAlign: "left",
+										color: "#282828",
+										marginBottom: "0px",
+										marginTop: "2%",
+										fontFamily: "Inter, sans-serif",
+										fontSize: "12px",
+									}}
+								>
+									{e.description}
+								</p>
+								<p
+									style={{
+										textAlign: "left",
+										color: "#A3A3A3",
+										marginTop: "5%",
+										fontFamily: "Inter, sans-serif",
+									}}
+								>
+									By {e.creator}
+								</p>
 							</div>
 							{/* <div
 							key={e.id}
