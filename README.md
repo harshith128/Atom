@@ -11,7 +11,7 @@ Atom is a clone of the Kickstarter website, where the creators will share their 
 - [Sagar Kurewar](https://github.com/sagar6699k)
 - [Harshith](https://github.com/harshith128)
 - [Sagar Jakkani](https://github.com/11431853)
-- 
+
 ## Prerequisites
 - nodemon 
 - npm packages
@@ -43,7 +43,6 @@ Clone the project
 ![homePage](https://user-images.githubusercontent.com/88575764/146690175-6f3a50e6-ec0d-4c9e-b3db-ba67be20efad.png)
 ![catPage](https://user-images.githubusercontent.com/88575764/146690180-6048b6cb-0bcf-4245-8dec-35b4c262f802.png)
 ![productPage](https://user-images.githubusercontent.com/88575764/146690179-f3bad186-808e-4f76-9f2c-8b590fee8025.png)
-![thankyou](https://user-images.githubusercontent.com/88575764/146690178-99b21d12-baba-49bb-a7e3-6d17befa6ae4.png)
 
 ## Lessons Learned
 
