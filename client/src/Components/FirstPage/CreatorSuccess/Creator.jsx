@@ -4,6 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, createTheme, ThemeProvider } from "@mui/material";
+import "./Creator.css";
 
 export default function Creator({ url, title, content, caption,w1,h1 }) {
 	const theme = createTheme({
@@ -14,7 +15,7 @@ export default function Creator({ url, title, content, caption,w1,h1 }) {
 		},
   });
 	return (
-		<Card sx={{ width: 264 ,marginRight:"2%"}}>
+		<Card sx={{ width: 264 ,marginRight:"2%",boxShadow:"none"}}>
 			<CardActionArea>
 				<CardMedia
 					component="img"

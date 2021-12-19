@@ -6,8 +6,9 @@
 }
 
 .news-box {
-    width: 90%;
+    width: 100%;
     text-align: center;
+    margin: auto;
 }
 
 .newsletter-cont {

@@ -4,7 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CustomBody2 from "./CustomBody2";
 
-export default function MagicDivination({ url, heading, content }) {
+export default function MagicDivination({ url, heading, content,sub }) {
 	const image = {
 		width: "50%",
 		height: "232px",
@@ -16,10 +16,11 @@ export default function MagicDivination({ url, heading, content }) {
 				borderTop: "1px solid #ebebeb",
 			}}
 		>
+			<p style={{marginLeft: "9.5%",marginBottom:"2%",marginTop:"5%",textAlign:"left",fontSize:"12px",fontFamily:"Inter, sans-serif",fontWeight:"400"}}>{sub}</p>
 			<div
 				style={{
 					display: "flex",
-					margin: "7% 9.5%",
+					marginLeft: "9.5%",
 					marginBottom: "9%",
 				}}
 			>

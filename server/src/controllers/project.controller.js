@@ -29,7 +29,7 @@ router.get("/subcategory", async(req, res) => {
 
 router.get("/random", async(req, res) => {
     try {
-        const projects = await Project.aggregate([{$sample: {size: 5}}]);
+        const projects = await Project.aggregate([{$sample: {size: 8}}]);
         res.status(200).send({ projects });
     } catch (error) {
         return res.status(400).send({ error: error.message });

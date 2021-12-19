@@ -6,3 +6,10 @@
     color: #018757;
     text-decoration: underline;
 }
+.family{
+    font-family: 'Inter',sans-serif;
+}
+.family:hover{
+    color: #018757;
+    text-decoration: underline;
+}
