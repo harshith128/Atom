@@ -30,6 +30,8 @@ export const Exploremore = () => {
         <div>
 
             <LogoNav />
+
+
             <div className="containter">
                 <div className="exploreSection">
                     <div className="text">Show me</div>
@@ -52,6 +54,60 @@ export const Exploremore = () => {
                     </div>
                 </div>
                 <div className="filters">More Filters</div>
+                
+                <div className="extra">
+                    <div>
+                {show1 &&
+                <div className="dropdown-1">
+                    <div style={{display: "flex"}}>
+                    <div>CATAGORIES</div>
+                    </div>
+                    <hr />
+                    <div className="categiries">
+                        <div>All Catogeries</div>
+                        <div>Art</div>
+                        <div>Comics</div>
+                        <div>Crafts</div>
+                        <div>Dance</div>
+                        <div>Design</div>
+                        <div>Fashion</div>
+                        <div>Film & Video</div>
+                    </div>
+                </div>}
+                {show2 &&
+                <div className="dropmenu-2">
+                    <div>
+                        <input type="text" className="searchbar" placeholder="Search by city, state, country...." />
+                        <div>BROADER LOCATIONS</div>
+                        <hr />
+                        <div className="categiries cat2">
+                        <div>Earth</div>
+                        <div>India</div>
+                        <div>Hyderabad, India</div>
+                        </div>
+                    </div>
+                </div>}
+                <div>
+                {show3 &&
+                    <div className="dropmenu-3">
+                    <div className="categiries cat3">
+                        <div>Magic</div>
+                        <div>Popularity</div>
+                        <div>Newest</div>
+                        <div>End Date</div>
+                        <div>Most Funded</div>
+                        <div>Most Backed</div>
+                        <div>Near Me</div>
+                    </div>
+                    </div>}
+                </div>
+
+            </div>
+                    
+                </div>
+
+
+
             </div>
 
             <div className="cat-cont">
