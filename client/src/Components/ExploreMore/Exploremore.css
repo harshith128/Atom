@@ -5,26 +5,43 @@
 .exploreSection {
     margin-top: 16px;
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 .containter {
     margin: auto;
-    width: 40%;
+    width: 50%;
+    margin-top: 50px;
 }
 .text {
     height: 22px;
-    width: 80.66667175292969px;
+    /* width: 80.66667175292969px;
     left: 0px;
-    top: 16px;
+    top: 16px; */
     margin: 0 12px;
+
+    font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+width: 14%;
+/* identical to box height */
+
+
+/* Primary/Ninja Black */
+
+color: #282828;
 }
 .dropdown {
     height: 34px;
-    width: 93px;
+    width: 12%;
     left: 88.66668701171875px;
     top: 0px;
     border-radius: 0px;
     padding: 2px 4px;
-    border: 1px solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 .btn {
     border: none;
@@ -50,6 +67,12 @@
 .categiries  div {
     padding: 3px 2px;
     margin-left: 10px;
+}
+.filters {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 2%;
+    margin-top: 20px;
 }
 
 .dropmenu-2 {
@@ -79,7 +102,7 @@ textarea:focus, input:focus {
     margin-top: 15px;
     position: absolute;
     z-index: 1;
-    margin-left: 33%;
+    margin-left: 39%;
     width: 7%;
     background: white;
 }
@@ -91,6 +114,19 @@ textarea:focus, input:focus {
     width: 81%;
     margin: auto;
     margin-top: 50px;
+}
+.titleExplore {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+    margin-left: 1.5%;
+
 }
 
 .noProjects {
@@ -104,6 +140,9 @@ textarea:focus, input:focus {
 .border {
     border: 1px solid #EBEBEB;
 
+}
+.innerborder {
+    padding: 3%;
 }
 .grid-image {
     width: 100%;
@@ -125,41 +164,136 @@ textarea:focus, input:focus {
 }
 
 .price {
-    color: #018757;
-    font-size: 12px;
-    line-height: 15px;
+   
+
+    font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* Primary/Grassy Green */
+
+color: #018757;
 }
 
 .title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
     font-size: 22px;
     line-height: 27px;
+    display: flex;
+    align-items: center;
+
+    /* Primary/Ninja Black */
+
     color: #282828;
+    margin-top: 30px;
+}
+.title:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .describe {
+    
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
     font-size: 14px;
     line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    /* Nuteral/2 */
+
     color: #525252;
-    font-weight: 500;
+    margin: 2px 0;
+}
+.author {
+    margin-top: 16px;
 }
 
 .fund {
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
     font-size: 12px;
     line-height: 18px;
-    font-weight: 500;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+
+    /* Nuteral/2 */
+
     color: #525252;
 }
 .bottom {
+    margin-top: 20px;
+    margin-left: 1%;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
     font-size: 12px;
     line-height: 18px;
+    /* identical to box height, or 150% */
+
+
+    /* Nuteral/3 */
+
     color: #7A7A7A;
-    margin-left: 1%;
 }
 .geo {
     margin: 0 5%;
+    
 }
 .sm {
     margin: 0 1%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+
+
+    /* Nuteral/3 */
+
+    color: #7A7A7A;
+    
+}
+.sm:hover {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.loc {
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+
+
+    /* Nuteral/3 */
+
+    color: #7A7A7A;
+}
+.loc:hover {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 

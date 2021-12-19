@@ -9,6 +9,8 @@ import { DesignAndTech } from "./Components/SecondPage/DesignAndTech";
 import { Exploremore } from "./Components/ExploreMore/Exploremore";
 import { ProductPage } from "./Components/ProductPage/ProductPage";
 import LoginPage from "./Components/LoginPage/Login";
+import { Rewards } from "./Components/RewardPage/Rewards";
+import { Rewardconformation } from "./Components/RewardPage/Rewardsconformation";
 
 
 
@@ -44,6 +46,12 @@ function App() {
 				</Route>
 				<Route exact path="/productpage">
 					<ProductPage />
+				</Route>
+				<Route path="/reward">
+					<Rewards />
+				</Route>
+				<Route path="/rewardConfirmation">
+					<Rewardconformation />
 				</Route>
 		
 				
