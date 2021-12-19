@@ -27,12 +27,13 @@ export default function Carousel_func({title}) {
 	useEffect(() => {
 		const run = async () => {
 			const data = await axios.get("http://localhost:2357/projects/random");
+			// console.log(data.data.projects)
 			setDetails(data.data.projects);
 		};
 		run();
 	}, []);
 	// console.log(details);
-	console.log("details:", details);
+	// console.log("details:", details);
 	const random = () => {
 		return Math.floor(Math.random() * 100);
 	}

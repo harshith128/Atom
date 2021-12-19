@@ -5,6 +5,7 @@ export const Exploremore = () => {
     const [show1, setShow1] = useState(false);
     const [show2, setShow2] = useState(false);
     const [show3, setShow3] = useState(false);
+    
     return (
         <div>
         <div className="containter">
