@@ -1,3 +1,19 @@
+.hover:hover{
+	text-decoration: underline;
+	text-decoration-color: #282828;
+	/* color:#282828 */
+}
+.link{
+	color: #003BFF;
+	font-weight:500;
+	margin-left: 2%;
+	text-decoration: none ;
+}
+.link:hover{
+	text-decoration: underline;
+	text-decoration-color:#003BFF ;
+}
+
 .rec-arrow-left {
 	background-color: white;
 	position: relative;

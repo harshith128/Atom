@@ -8,6 +8,7 @@ import CLOSE from "../../../utils/svgs/Close.svg";
 import "./LogoNav.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { TextField } from "@mui/material";
+import { Link } from "react-router-dom";
 
 
 const theme = createTheme();
@@ -32,7 +33,7 @@ export default function LogoNav() {
 							Start a project
 						</Typography>
 						<div style={{ flexGrow: "1" }}>
-							<img src={LOGO} alt="" />
+							<Link to="/"><img src={LOGO} alt="" /></Link>
 						</div>
 						<div id="forFlex" onClick={handleSearch}>
 							<p className="hover">Search</p>

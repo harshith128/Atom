@@ -2,7 +2,7 @@ import "./App.css";
 
 import SignupPage from "./Components/SignupPage/SignupPage";
 import ConfirmationPage from "./Components/ConfirmationPage/ConfirmationPage";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 import CardDetailPage from "./Components/CardDetailPage/CardDetailPage";
 import FirstPage from "./Components/FirstPage/FirstPage";
 import { DesignAndTech } from "./Components/SecondPage/DesignAndTech";
@@ -45,6 +45,7 @@ function App() {
 				<Route exact path="/productpage">
 					<ProductPage />
 				</Route>
+		
 				
 			</Switch>
 		</div>

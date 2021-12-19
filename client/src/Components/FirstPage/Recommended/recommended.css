@@ -34,10 +34,10 @@
     cursor: pointer;
 }
 
-.recommend-creator-span:hover {
+/* .recommend-creator-span:hover {
     text-decoration: underline;
     cursor: pointer;
-}
+} */
 
 .recommend-fund {
     font-size: 12px;
