@@ -35,16 +35,22 @@ button.rec-dot{
 
 button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
   box-shadow: none;
+  background-color:white;
 }
 
 button.rec-arrow{
 	/* background-color: rgb(185, 49, 49); */
 	 box-shadow: none;
 	 border-radius: 0%;
-	 background-color:white;
-	 color: #003BFF;
+	 background-color: red;
+	 /* color: #003BFF; */
 	 padding: 0%;
 
+}
+button.rec-arrow:hover, button.rec-arrow:focus  {
+  /* box-shadow: none; */
+  border-radius: 50%;
+  /* background-color: red; */
 }
 
 

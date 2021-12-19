@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import LogoNav from '../FirstPage/LogoNavbar/LogoNav';
 import { Footer } from '../Footer/Footer';
 import './login.css';
@@ -47,7 +48,9 @@ const handleLogin = async() => {
                     <input type="checkbox" />
                     Remember me
                 </div>
-                <button className='login1_btn' onClick={ handleLogin }>Log in</button>
+                <Link to="/carddetail"><button className='login1_btn' onClick={handleLogin}>Log in</button></Link>
+                {/* <button className='login1_btn' onClick={ handleLogin }><Link to="/carddetail">Log in</Link></button> */}
+                
                 <div className="lines"><div className="common_line"></div>Or<div className="common_line"></div></div>
                 <button  className='fb1_btn'>Continue with Facebook</button>
                 <button  className='google_login_btn'>Continue with Google</button>

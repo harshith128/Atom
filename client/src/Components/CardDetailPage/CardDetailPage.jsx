@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './CardDetailPage.css';
 
 const CardDetailPage = () => {
@@ -108,7 +109,8 @@ const CardDetailPage = () => {
                     Learn more about accountability
                 </div>
 
-                <button className='pledge_btn'>Pledge</button>
+                    {/* <button className='pledge_btn'>Pledge</button> */}
+                    <button className='pledge_btn'><Link to="/confirmation">Pledge</Link></button>
 
                 <div className="submiting_div">
                     By submitting your pledge, you agree to Kickstarter’s Terms of Use, and Privacy Policy and for out payment Processor,Stripe, to charge your payment method.

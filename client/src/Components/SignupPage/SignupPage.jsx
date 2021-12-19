@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './SignupPage.css';
 const init = {
     username: "",
@@ -66,7 +67,9 @@ const handleSignUp = async() => {
                         <span>Contact me about participating in Kickstarter research</span>
                     </div>
 
-                    <button onClick={handleSignUp} className='create_account_btn'>Create account</button>
+                    {/* <button onClick={handleSignUp} className='create_account_btn'>Create account</button> */}
+                    <button onClick={handleSignUp} className='create_account_btn'><Link to="/login">Create account</Link></button>
+
 
                     <div className="privacy_policy">
                         By signing up, you agree to our <span>Privacy Policy, Cookie Policy</span> and  <span>Terms of Use.</span> 

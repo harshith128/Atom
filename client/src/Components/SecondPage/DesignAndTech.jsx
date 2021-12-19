@@ -1,3 +1,4 @@
+import { blue } from "@mui/material/colors";
 import Carousel from "../FirstPage/Carousel/Carousel_func";
 import CreatorsCorner from "../FirstPage/CreatorsCorner/CreatorsCorner";
 import FeaturedProject from "../FirstPage/FeaturedProject/FeaturedProject";
@@ -9,6 +10,7 @@ import Recommended from "../FirstPage/Recommended/Recommended";
 import { Footer } from "../Footer/Footer";
 import { Newsletter } from "../Newsletter/Newsletter";
 import { DisplayProjects } from "../ProjectDisplay/DisplaySideScroll";
+import { Link } from "react-router-dom";
 
 import { Explore } from "./Explore";
 
@@ -24,11 +26,24 @@ export const DesignAndTech = () => {
 		"DIY Electronis",
 		"Sound",
 	];
+	const styles = {
+		textAlign: "left",
+		marginLeft:"11%"
+	}
 	return (
 		<div>
 			<LogoNav />
 			<Nav />
-			<div style={{ display: "flex" }}>
+			<div style={{ marginTop: "5%", marginBottom: "0%" }}>
+				<h1 style={styles}>Design & Tech</h1>
+				<p style={styles}>
+					From fine design to innovative tech, discover projects from creators
+					working to build a more beautiful feature
+				</p>
+				<span style={{marginLeft:"11%",color:"blue"}}><Link to="/exploremore">Explore Design</Link></span>
+				<span style={{marginLeft:"3%",color:"blue",marginBottom:"0px"}}>Explore Technology</span>
+			</div>
+			<div style={{ display: "flex", marginTop: "0%" }}>
 				<FeaturedProject></FeaturedProject>
 				<Recommended></Recommended>
 			</div>

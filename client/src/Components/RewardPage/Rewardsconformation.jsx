@@ -1,6 +1,6 @@
 import "./Rewards.css"
-import { Link } from "react-router-dom"
 import backimg from "./backgroundblack.jpg";
+import { Link } from "react-router-dom";
 
 export const Rewardconformation = () => {
     return  (
@@ -38,7 +38,7 @@ export const Rewardconformation = () => {
                         </div>
                     </div>
                     <div>
-                        <div className="btnclick">confirm Charges</div>
+                        <div className="btnclick"><Link to="/signup">Confirm Charges</Link></div>
                         <div className="cancel">Cancel</div>
                     </div>
                 </div>

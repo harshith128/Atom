@@ -20,7 +20,7 @@ export default function FeaturedProject() {
 	// }
 	// console.log(res.data.projects[0]);
 	const featured = {
-		marginTop: "13%",
+		marginTop: "6%",
 		position: "relative",
 		width: "46%",
 		height: "48%",

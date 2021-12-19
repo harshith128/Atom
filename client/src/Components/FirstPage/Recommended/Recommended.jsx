@@ -43,7 +43,7 @@ export default function Recommended() {
 		<div style={outer}>
 			<p
 				style={{
-					marginTop: "0.7rem",
+					marginTop: "-3.3rem",
 					marginLeft: "1%",
 					textAlign: "left",
 					fontWeight: 500,
