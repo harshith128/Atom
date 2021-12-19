@@ -248,6 +248,11 @@
     border: 1px solid #EBEBEB;
     box-sizing: border-box;
 }
+.enter_pledge_amount:hover{
+    border: 1px solid rgb(36, 85, 36);
+}
+
+
 
 .box2_para1{
     width: 183px;
