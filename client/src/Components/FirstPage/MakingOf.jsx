@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import React from "react";
 import Creator from "./CreatorSuccess/Creator";
 
-export default function MakingOf() {
+export default function MakingOf({head}) {
 	return (
 		<div
 			style={{
@@ -20,7 +20,7 @@ export default function MakingOf() {
 					color: "#000000",
 				}}
 			>
-				THE MAKING OF
+				{head}
 			</Typography>
 			<div
 				style={{

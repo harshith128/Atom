@@ -1,34 +1,50 @@
+.hover:hover{
+	text-decoration: underline;
+	text-decoration-color: #282828;
+	/* color:#282828 */
+}
+.link{
+	color: #003BFF;
+	font-weight:500;
+	margin-left: 2%;
+	text-decoration: none ;
+	margin-top: -0.11%;
+}
+.link:hover{
+	text-decoration: underline;
+	text-decoration-color:#003BFF ;
+}
+
 .rec-arrow-left {
 	background-color: white;
 	position: relative;
 	top: -62%;
-	left: 80%;
+	left: 81%;
 }
 .rec-arrow-right {
 	background-color: white;
     position: relative;
     top: -62%;
-    left: -9%;
+    left: -11%;
+
 }
-.cNNJIt {
-	box-sizing: border-box;
-	-webkit-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-	font-size: 1.6em;
-	/* background-color: rgba(103,58,183,0.1); */
-	color: #999;
-	/* box-shadow: 0 0 2px 0px #333; */
-	/* border-radius: 22%; */
-	border: none;
-	padding: 0;
-	width: 15px;
-	height: 50px;
-	min-width: 50px;
-	line-height: 50px;
-	-webkit-align-self: center;
-	-ms-flex-item-align: center;
-	align-self: center;
-	cursor: pointer;
-	outline: none;
+button.rec-dot{
+  background-color: white;
+  box-shadow: none;
 }
+
+button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
+  box-shadow: none;
+}
+
+button.rec-arrow{
+	/* background-color: rgb(185, 49, 49); */
+	 box-shadow: none;
+	 border-radius: 0%;
+	 background-color:white;
+	 color: #003BFF;
+	 padding: 0%;
+
+}
+
 
