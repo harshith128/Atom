@@ -372,6 +372,9 @@ color: #018757;
 .productName:hover{
     text-decoration: underline;
 }
+.productName:hover{
+    text-decoration: underline;
+}
 .description{
     font-family: Inter;
     font-style: normal;

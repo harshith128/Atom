@@ -1,3 +1,40 @@
-.css-5m913t-MuiPaper-root-MuiCard-root{
-    box-shadow: none;
+.css-5m913t-MuiPaper-root-MuiCard-root {
+	box-shadow: none;
+}
+.font-si-fam {
+	font-size: 14px;
+	font-family: 'Inter', sans-serif;
+	text-align: left;
+	color: #282828;
+	margin-left: 0%;
+	margin-bottom: 2%;
+}
+.font-si-fam:hover {
+	text-decoration: underline;
+}
+.font-si-fam-body {
+	font-size: 12px;
+	font-family: 'Inter', sans-serif;
+	text-align: left;
+	color: #282828;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	font-weight: 400;
+}
+.font-si-fam-read {
+	font-size: 12px;
+	font-family: 'Inter', sans-serif;
+	text-align: left;
+	color: #a3a3a3;
+}
+.font-si-caption {
+	font-family: 'Inter', sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 18px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #a3a3a3;
+
 }

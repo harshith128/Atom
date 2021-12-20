@@ -1,21 +1,51 @@
-.pro-cal-name:hover{
+.pro-cal-name:hover {
 	color: #018757;
 	text-decoration: underline;
 	/* color:#282828 */
 }
+.pro-cal-name {
+	font-family: "Inter", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 17px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #282828;
+}
+.pro-cal-desc {
+	font-family: 'Inter', sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 15px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #282828;
+}
+.pro-cal-create {
+	font-family: 'Inter', sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 15px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #A3A3A3;
+}
 .dummy-bar-home {
 	width: 100%;
 }
-.link{
-	color: #003BFF;
-	font-weight:500;
+.link {
+	color: #003bff;
+	font-weight: 500;
 	margin-left: 2%;
-	text-decoration: none ;
+	text-decoration: none;
 	margin-top: -0.11%;
 }
-.link:hover{
+.link:hover {
 	text-decoration: underline;
-	text-decoration-color:#003BFF ;
+	text-decoration-color: #003bff;
 }
 
 .rec-arrow-left {
@@ -26,34 +56,45 @@
 }
 .rec-arrow-right {
 	background-color: white;
-    position: relative;
-    top: -62%;
-    left: -11%;
-
+	position: relative;
+	top: -62%;
+	left: -11%;
 }
-button.rec-dot{
-  background-color: white;
-  box-shadow: none;
-}
-
-button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
-  box-shadow: none;
-  background-color:white;
+button.rec-dot {
+	background-color: white;
+	box-shadow: none;
 }
 
-button.rec-arrow{
+button.rec-dot:hover,
+button.rec-dot:active,
+button.rec-dot:focus {
+	box-shadow: none;
+	background-color: white;
+}
+
+button.rec-arrow {
 	/* background-color: rgb(185, 49, 49); */
-	 box-shadow: none;
-	 border-radius: 0%;
-	 background-color: white;
-	 /* color: #003BFF; */
-	 padding: 0%;
-
+	box-shadow: none;
+	border-radius: 0%;
+	background-color: white;
+	/* color: #003BFF; */
+	padding: 0%;
 }
-button.rec-arrow:hover, button.rec-arrow:focus  {
-  /* box-shadow: none; */
-  border-radius: 50%;
-  /* background-color: red; */
+button.rec-arrow:hover,
+button.rec-arrow:focus {
+	/* box-shadow: none; */
+	border-radius: 50%;
+	/* background-color: red; */
 }
 
-
+.car-title-fam {
+	font-family: "Inter", sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 15px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #000000;
+	margin-left: -0.5%;
+}

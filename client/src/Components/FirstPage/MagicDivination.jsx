@@ -3,8 +3,9 @@ import { Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import CustomBody2 from "./CustomBody2";
+import "./MagicDivination.css";
 
-export default function MagicDivination({ url, heading, content,sub }) {
+export default function MagicDivination({ url, heading, content, sub }) {
 	const image = {
 		width: "50%",
 		height: "232px",
@@ -16,7 +17,19 @@ export default function MagicDivination({ url, heading, content,sub }) {
 				borderTop: "1px solid #ebebeb",
 			}}
 		>
-			<p style={{marginLeft: "9.5%",marginBottom:"2%",marginTop:"5%",textAlign:"left",fontSize:"12px",fontFamily:"Inter, sans-serif",fontWeight:"400"}}>{sub}</p>
+			<p
+				style={{
+					marginLeft: "9.5%",
+					marginBottom: "2%",
+					marginTop: "5%",
+					textAlign: "left",
+					fontSize: "12px",
+					fontFamily: "Inter, sans-serif",
+					fontWeight: "400",
+				}}
+			>
+				{sub}
+			</p>
 			<div
 				style={{
 					display: "flex",
@@ -35,36 +48,16 @@ export default function MagicDivination({ url, heading, content,sub }) {
 							// marginTop: "6px",
 						}}
 					>
-						<p
-							style={{
-								fontSize: "24px",
-								textAlign: "left",
-								marginLeft: "7%",
-								// marginTop: "0px",
-							}}
-						>
-							{heading}
-						</p>
-						<p
-							style={{
-								
-								textAlign: "left",
-								fontSize: "18px",
-								// lineHeight: "22px",
-								marginLeft: "7%",
-								width: "80%",
-							}}
-						>
-							{content}
-						</p>
+						<p className="magic-head">{heading}</p>
+						<p className="magic-sub-fon">{content}</p>
 					</div>
 					<div>
 						<Link
-							to={"./pagination"}
+							to={""}
 							style={{
 								color: "blue",
 								margin: "8% 9.5%",
-								marginLeft: "10%"
+								marginLeft: "10%",
 							}}
 						>
 							Read more

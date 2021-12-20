@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material";
 import React from "react";
 import Creator from "./CreatorSuccess/Creator";
+import "./MakingOf.css";
 
 export default function MakingOf({head}) {
 	return (
