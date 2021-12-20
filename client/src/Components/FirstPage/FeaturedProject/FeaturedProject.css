@@ -1,6 +1,3 @@
-.target_p > p {
-	margin-left: -77%;
-}
 .featured {
 	color: #525252;
 }
@@ -16,6 +13,30 @@
 	font-size: 12px;
 	font-weight: 500;
 }
+.pro-home-name {
+	color: #282828;
+	font-size: 1.5rem;
+	font-family: "Inter", sans-serif;
+	text-align: left;
+	line-height: 31.47px;
+	font-weight: 400;
+}
+.pro-home-desc {
+	color: #282828;
+	font-size: 1.28rem;
+	font-family: "Inter", sans-serif;
+	text-align: left;
+	line-height: 30px;
+	font-weight: 300;
+}
+.pro-home-creator {
+	color: #a3a3a3;
+	font-size: 0.9rem;
+	font-family: "Inter", sans-serif;
+	text-align: left;
+	line-height: 30px;
+	font-weight: 300;
+}
 
 .pro-home-name:hover {
 	cursor: pointer;
@@ -25,7 +46,7 @@
 
 .featured-dummy-bar {
 	width: 100%;
-	color: #EBEBEB;
+	color: #ebebeb;
 	height: 5px;
 }
 
@@ -33,4 +54,24 @@
 	color: #018757;
 	height: 5px;
 }
-
+.feature-para-title {
+	/* //styleName: Text Style/Body/Body 2/Medium; */
+	font-family: 'Inter', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 17px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #525252;
+	margin-top: -4.3rem;
+}
+.feature-para-body {
+	color: #525252;
+	margin-top: 0.7rem;
+	margin-left: 1%;
+	text-align: left;
+	font-weight: 500;
+	font-size: 1rem;
+	font-family: "Inter", sans-serif;
+}

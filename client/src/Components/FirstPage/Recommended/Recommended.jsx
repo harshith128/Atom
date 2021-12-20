@@ -41,16 +41,7 @@ export default function Recommended() {
 	// const paginate = (number)=> setPage(number)
 	return (
 		<div style={outer}>
-			<p
-				style={{
-					marginTop: "-3.3rem",
-					marginLeft: "1%",
-					textAlign: "left",
-					fontWeight: 500,
-				}}
-			>
-				RECOMMENDED FOR YOU
-			</p>
+			<p className="rec-si-cng">Recommended for you</p>
 			{get.map((d, i) => {
 				return (
 					<div className="recomended-cont-box" key={i} style={element}>
@@ -59,16 +50,24 @@ export default function Recommended() {
 						</div>
 						<div className="recommended-data">
 							<p className="recommend-name">{d.projectName}</p>
-							<p className="recommend-fund">{Math.floor(Math.random() * 1000)}% funded</p>
-							<p className="recommend-creator">by <span className="recommend-creator-span">{d.creator}</span></p>
+							<p className="recommend-fund">
+								{Math.floor(Math.random() * 1000)}% funded
+							</p>
+							<p className="recommend-creator">
+								by <span className="recommend-creator-span">{d.creator}</span>
+							</p>
 							<div className="like-dislike">
 								<img id="book111" className="book000" src="images/book.svg" />
 								{/* <span id="remindMe" className="hovertext">Remind me</span> */}
 
 								<img id="book222" className="book000" src="images/like.svg" />
 								{/* <span id="liked" className="hovertext">More like this</span> */}
-								
-								<img id="book333" className="book000" src="images/dislike.svg" />
+
+								<img
+									id="book333"
+									className="book000"
+									src="images/dislike.svg"
+								/>
 								{/* <span id="disliked" className="hovertext">Less like this</span> */}
 								{/* <span className="book123">
 									<BsBookmark />
@@ -85,7 +84,11 @@ export default function Recommended() {
 				);
 			})}
 			{/* <BasicPagination setPage={setPage} page={page}></BasicPagination> */}
-			<Pagination count={3} style={{ margin: "12% 33%" }} onChange={(event, value) => setPage(value)} />
+			<Pagination
+				count={3}
+				style={{ margin: "12% 33%" }}
+				onChange={(event, value) => setPage(value)}
+			/>
 		</div>
 	);
 }

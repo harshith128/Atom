@@ -1,37 +1,38 @@
 .recomended-cont-box {
-    padding: 10px;
+	padding: 10px;
 }
 
 .recommended-data {
-    padding-left: 20px;
+	padding-left: 20px;
 }
 
 .recommend-name {
-    font-size: 14px;
-    font-weight: 400;
-    color: #282828;
-    text-align: left;
-    margin: 0;
-    padding: 3px;
-    width: 270px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; 
+	font-size: 14px;
+	font-weight: 400;
+	color: #282828;
+	text-align: left;
+	margin: 0;
+	padding: 3px;
+	width: 270px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
-.recommend-creator, .recommend-creator-span {
-    font-size: 12px;
-    font-weight: 400;
-    color: #7A7A7A;
-    text-align: left;
-    margin: 0;
-    padding: 3px;
+.recommend-creator,
+.recommend-creator-span {
+	font-size: 12px;
+	font-weight: 400;
+	color: #7a7a7a;
+	text-align: left;
+	margin: 0;
+	padding: 3px;
 }
 
 .recommend-name:hover {
-    color: #018757;
-    text-decoration: underline;
-    cursor: pointer;
+	color: #018757;
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 /* .recommend-creator-span:hover {
@@ -40,25 +41,25 @@
 } */
 
 .recommend-fund {
-    font-size: 12px;
-    font-weight: 500;
-    color: #018757;
-    text-align: left;
-    margin: 0;
-    padding: 3px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #018757;
+	text-align: left;
+	margin: 0;
+	padding: 3px;
 }
 
 .like-dislike {
-    display: flex;
+	display: flex;
 }
 
 .book000 {
-    padding: 4px;
+	padding: 4px;
 }
 
 .book000:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+	transform: scale(1.1);
+	cursor: pointer;
 }
 
 /* #book111:hover + #remindMe {
@@ -74,13 +75,25 @@
 }
    */
 .hovertext {
-    visibility: hidden;
-    top: 100px;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-  }
+	visibility: hidden;
+	top: 100px;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+}
+.rec-si-cng {
+	font-family: "Inter", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 17px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #525252;
+	margin-top: -8.3rem;
+	margin-left: 1%;
+}

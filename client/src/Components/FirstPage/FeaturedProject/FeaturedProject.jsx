@@ -29,21 +29,14 @@ export default function FeaturedProject() {
 		width: "46%",
 		height: "48%",
 		marginLeft: "10%",
-		borderRight:"1px solid #00000026"
+		borderRight: "1px solid #00000026",
 	};
 	const imageBox = {
 		width: "87%",
 		marginTop: "7%",
 		// boxShadow: "0px 1px 0px rgba(163, 163, 163, 0.25)",
 	};
-	const projectTitle = {
-		fontSize: "24px",
-		lineHeight: "2.2rem",
-		marginLeft: "1%",
-		textAlign: "left",
-		wordWrap: "normal",
-		fontWeight: "400",
-	};
+
 	const projectDesc = {
 		fontSize: "16px",
 		marginTop: "10px",
@@ -57,42 +50,20 @@ export default function FeaturedProject() {
 			<div style={featured}>
 				{/* {console.log(res.description)} */}
 				<div style={imageBox} className="target_p">
-					<p
-						style={{
-							marginTop: "0.7rem",
-							marginLeft: "1%",
-							textAlign: "left",
-							fontWeight: 500,
-							fontSize: "14px",
-						}}
-					>
-						FEATURED PROJECT
-					</p>
-					<img
-						src={res.coverImage}
-						alt=""
-						className="projectImage"
-					/>
+					<p className="feature-para-title">FEATURED PROJECT</p>
+					<img src={res.coverImage} alt="" className="projectImage" />
 					<div
 						style={{
 							width: random(),
-							height: "6px",										backgroundColor: "#018757",
+							height: "6px",
+							backgroundColor: "#018757",
 							color: "white",
 							margin: "0px",
-							}}
-					></div>
-					<p className="pro-home-name" style={projectTitle}>{res.projectName}</p>
-					<p style={projectDesc}>{res.description}</p>
-					<p
-						style={{
-							fontSize: "12px",
-							marginTop: "10px",
-							textAlign: "left",
-							marginLeft: "1%",
 						}}
-					>
-						By {res.creator}
-					</p>
+					></div>
+					<p className="pro-home-name">{res.projectName}</p>
+					<p className="pro-home-desc">{res.description}</p>
+					<p className="pro-home-creator">By {res.creator}</p>
 				</div>
 			</div>
 		</>
