@@ -45,7 +45,7 @@ export const ProductPage = () => {
                                 <div className="pledge">days to go</div>
                             </div>
                             <div className="back-btn">
-                                <button className="project-btn"><Link to="/reward">Back this project</Link></button>
+                            <Link to="/reward"><button className="project-btn">Back this project</button></Link>
                             </div>
                             <div className="below-btn">
                                 <div>
