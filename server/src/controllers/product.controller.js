@@ -5,9 +5,13 @@ const { nanoid } = require("nanoid");
 const Product = require("../models/product.model");
 
 router.get("", async(req, res) => {
+    const page = +req.query.page || 1;
+    const size = 3;
+    const offset = (page - 1) * size;
     try {
-        const product = await Product.find().lean().exec();
-        res.status(200).send({ product });
+        const product = await Product.find().skip(offset).limit(size).lean().exec();
+        const total = Math.ceil((await Product.find().countDocuments().lean().exec() ) / size);
+        res.status(200).send({ product, total });
     } catch (error) {
         return res.status(400).send({ error: error.message });
     }

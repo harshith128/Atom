@@ -2,13 +2,28 @@ import "./Rewards.css"
 import { Link } from "react-router-dom"
 import backimg from "./backgroundblack.jpg"
 import { useState } from "react"
+import { Help } from "../Help/Help"
 export const Rewards = () => {
     const [select, setSelect] = useState(false);
+    const [amount, setAmount] = useState(1);
+
+    const handleReward = () => {
+        setAmount(amount || 1);
+        localStorage.setItem("reward", JSON.stringify({amount}));
+    }
+
+    const handleChandeReward = (e) => {
+        if(isNaN(e.target.value)){
+            alert("Only numbers are allowed");
+            return
+        }
+        setAmount(e.target.value);
+        return
+    }
 
 
     return (
-        <div>
-            <div>
+        <div className="reward-page">
             <Link to="/" className="logodiv">
                 <img src="images/Logo.png" className="imglogo" alt="" />
             </Link>
@@ -17,12 +32,51 @@ export const Rewards = () => {
                 <div className="titles">ORCA Pot-One pot fits all</div>
                 <div className="subtit">by Everstt</div>
             </div>
-            <div className="subheading">
-                <div className="steps">
-                    <div className="reward">Rewards</div>
-                    <div className="addons"><img src="images/forward.jpg" alt="" /> Add-ons </div>
-                    <div className="addons"><img src="images/forward.jpg" alt="" /> Payment</div>
+            <div className="steps">
+                    <h3 className="reward">REWARDS</h3>
+                    <img className="fwd-image" src="images/fwd.svg" alt="img" />
+                    <h3 className="addons"> ADD-ONS </h3>
+                    <img className="fwd-image"  src="images/fwd.svg" alt="img" />
+                    <h3 className="addons"> PAYMENT </h3>
+            </div>
+            <div className="reward-container">
+            <div className="reward-section2">
+                    {/* <div>Hello world.</div>
+                    <div>Hello world.</div> */}
+                    <div className="backimage" style={{background: `url(${backimg})`}}>
+                        <img src="images/cart.png" className="cartimage" alt="" />
+                        <span className="with">Rewards with guarenteed</span>
+                    </div>
+                    <div className="textbelow">Your pledge will support an ambitious creative project that has yet to be developed. There’s a risk that, despite a creator’s best efforts, your reward will not be fulfilled, and we urge you to consider this risk prior to pledging. Kickstarter is not responsible for project claims or reward fulfillment.</div>
+
+                    <div className="textbelow">Learn more about accountability</div>
+                    <div className="frequently">FREQUENTLY ASKED QUESTIONS</div>
+                    <div className="bulletarrows">
+                        <img src="images/bulletarrows.jpg" alt="" />
+                        <span className="queries">How do I pledge?</span>
+                    </div>
+                    <div className="bulletarrows">
+                        <img src="images/bulletarrows.jpg" alt="" />
+                        <span className="queries">When is my card changed?</span>
+                    </div>
+                    <div className="bulletarrows">
+                        <img src="images/bulletarrows.jpg" alt="" />
+                        <span className="queries">So I'm only charged if funding succeeds?</span>
+                    </div>
+                    <div className="bulletarrows">
+                        <img src="images/bulletarrows.jpg" alt="" />
+                        <span className="queries">What can others see about my pledge?</span>
+                    </div>
+                    <div className="bulletarrows">
+                        <img src="images/bulletarrows.jpg" alt="" />
+                        <span className="queries">What if I went to change my pledge?</span>
+                    </div>
+                    <div className="bulletarrows">
+                        <img src="images/bulletarrows.jpg" alt="" />
+                        <span className="queries">If this project is funded, how do I get my reward?</span>
+                    </div>
                 </div>
+            <div className="subheading">
                 <div className="reward-section">
                     <div className="selection">Select your reward</div>
                     <div className="reward">Select an option below</div>
@@ -41,10 +95,10 @@ export const Rewards = () => {
                             <div className="pledgeReward">Pledge without a reward</div>
                             <div className="left-padd left-padd1">
                                 <div className="rs1">Pledge amount</div>
-                                <div className="rsprice rsprice1"><span className="dollar">$</span></div>
-                                <input type="text" className="inputbar inputbarselect" placeholder="Enter Amount" />
+                                <div className="rsprice rsprice1"><p className="dollor-text">$</p></div>
+                                <input onChange={handleChandeReward} type="number" value={amount} className="inputbar inputbarselect" placeholder="Enter Amount" />
                                 <Link style={{textDecoration: "none"}} to="/rewardconformationpage">
-                                <span className="conti">Continue</span>
+                                   <span onClick={handleReward} className="conti">Continue</span>
                                 </Link>
                             </div>
                         </div>}
@@ -238,45 +292,10 @@ export const Rewards = () => {
                         </div>
                     </div>
                 </div>
-                <div className="reward-section2">
-                    {/* <div>Hello world.</div>
-                    <div>Hello world.</div> */}
-                    <div className="backimage" style={{background: `url(${backimg})`}}>
-                        <img src="images/cart.png" className="cartimage" alt="" />
-                        <span className="with">Rewards with guarenteed</span>
-                    </div>
-                    <div className="textbelow">Your pledge will support an ambitious creative project that has yet to be developed. There’s a risk that, despite a creator’s best efforts, your reward will not be fulfilled, and we urge you to consider this risk prior to pledging. Kickstarter is not responsible for project claims or reward fulfillment.</div>
-
-                    <div className="textbelow">Learn more about accountability</div>
-                    <div className="frequently">FREQUENTLY ASKED QUESTIONS</div>
-                    <div className="bulletarrows">
-                        <img src="images/bulletarrows.jpg" alt="" />
-                        <span className="queries">How do I pledge?</span>
-                    </div>
-                    <div className="bulletarrows">
-                        <img src="images/bulletarrows.jpg" alt="" />
-                        <span className="queries">When is my card changed?</span>
-                    </div>
-                    <div className="bulletarrows">
-                        <img src="images/bulletarrows.jpg" alt="" />
-                        <span className="queries">So I'm only charged if funding succeeds?</span>
-                    </div>
-                    <div className="bulletarrows">
-                        <img src="images/bulletarrows.jpg" alt="" />
-                        <span className="queries">What can others see about my pledge?</span>
-                    </div>
-                    <div className="bulletarrows">
-                        <img src="images/bulletarrows.jpg" alt="" />
-                        <span className="queries">What if I went to change my pledge?</span>
-                    </div>
-                    <div className="bulletarrows">
-                        <img src="images/bulletarrows.jpg" alt="" />
-                        <span className="queries">If this project is funded, how do I get my reward?</span>
-                    </div>
-                </div>
                 
             </div>
             </div>
+            <Help />
         </div>
     )
 }

@@ -10,16 +10,24 @@ export const Exploremore = () => {
 	const [show2, setShow2] = useState(false);
 	const [show3, setShow3] = useState(false);
 	const [displaydata, setDisplaydata] = useState([]);
+	const [page, setPage] = useState(1);
+	const [total, setTotal] = useState(0);
 
 	const getData = async () => {
-		const res = await axios("http://localhost:2357/products");
-		console.log(res.data.product);
-		setDisplaydata(res.data.product);
+		const res = await axios(`http://localhost:2357/products?page=${page}`);
+		// console.log(res.data.product);
+		// console.log(page);
+		setTotal(res.data.total);
+		setDisplaydata([ ...displaydata, ...res.data.product]);
 	};
+
+	const handleLoadMore = () => {
+		setPage(page + 1);
+	}
 
 	useEffect(() => {
 		getData();
-	}, []);
+	}, [page]);
 
 	return (
 		<div>
@@ -67,8 +75,8 @@ export const Exploremore = () => {
 						</button>
 					</div>
 				</div>
-				<div className="filters">More Filters</div>
-
+				<div className="filters">more filter</div>
+			
 				<div className="extra">
 					<div>
 						{show1 && (
@@ -125,7 +133,10 @@ export const Exploremore = () => {
 					</div>
 				</div>
 			</div>
-
+			<h2 className="head-explore-more">
+				<span className="explore-more-head">Explore </span>
+				<span className="explore-more-num">46,507 projects</span>
+			</h2>
 			<div className="cat-cont">
 				{displaydata.map((ele, i) => {
 					return (
@@ -151,7 +162,7 @@ export const Exploremore = () => {
 								></div>
 							</div>
 							<div className="measures">
-								<span>${Math.floor(Math.random() * 100) + 1}</span>
+								<span className="green-random-text">${Math.floor(Math.random() * 1000) + 1}</span>
 								<span>{Math.floor(Math.random() * 100) + 1}% funded</span>
 								<span>{Math.floor(Math.random() * 50) + 10} days to go</span>
 							</div>
@@ -164,6 +175,9 @@ export const Exploremore = () => {
 						</div>
 					);
 				})}
+			</div>
+			<div className="dummy-container">
+				<button disabled={ total === page } onClick={handleLoadMore} className={ total !== page ? "load-more-explore" : "load-more-explore-dis" }>Load More</button>
 			</div>
 
 			<Footer />

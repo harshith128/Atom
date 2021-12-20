@@ -4,6 +4,7 @@
     margin: auto;
     display: grid;
     grid-template-columns: 15% 60% 25%;
+    padding-bottom: 50px;
 }
 
 .toggle_menu{
@@ -212,6 +213,7 @@
     height: 31px;
     background: #FFFFFF;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    margin-top: 20px;
 }
 
 .pledge_input{

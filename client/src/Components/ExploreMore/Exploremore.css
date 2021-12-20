@@ -32,6 +32,7 @@ width: 14%;
 /* Primary/Ninja Black */
 
 color: #282828;
+padding-top: 20px;
 }
 .dropdown {
     height: 34px;
@@ -46,9 +47,14 @@ color: #282828;
     width: 113px;
     height: 50px;
     background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 }
+.green-random-text {
+    color: #018757;
+    font-weight: 400;
+}
+
 .btn {
     border: none;
     background: none;
@@ -57,10 +63,10 @@ color: #282828;
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    width: 113px;
+    width: 120px;
     height: 50px;
     background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 
 }
 .arrow {
@@ -84,6 +90,23 @@ color: #282828;
     cursor: pointer;
     margin-left: 2%;
     margin-top: 20px;
+    font-weight: 500;
+    color: #7A7A7A;
+}
+.head-explore-more {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+.explore-more-head {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+}
+.explore-more-num {
+    color: #018757;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .dropmenu-2 {
@@ -314,6 +337,9 @@ color: #018757;
     display: grid;
     grid-template-columns: 31% 31% 31%;
     gap: 3%;
+    /* padding-bottom: 100px; */
+    margin-bottom: 60px;
+    /* border-bottom: 1px solid brown; */
 }
 
 .display-data {
@@ -341,6 +367,10 @@ color: #018757;
     display: flex;
     align-items: center;
     color: #282828;
+    cursor: pointer;
+}
+.productName:hover{
+    text-decoration: underline;
 }
 .productName:hover{
     text-decoration: underline;
@@ -372,7 +402,9 @@ color: #018757;
 .image-cover {
     width: 100%;
     max-height: 220px;
+    cursor: pointer;
 }
+
 .measures{
     margin-top: 45px;
     height: 60px;
@@ -402,5 +434,28 @@ color: #018757;
 }
 
 
+.load-more-explore, .load-more-explore-dis {
+    border: none;
+    background-color: #018757;
+    color: #FFFFFF;
+    cursor: pointer;
+    width: 120px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 20px 12px 20px;
+    text-align: center;
+    margin-left: calc(50% - 60px);
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+.load-more-explore {
+    background-color: #018757;
+}
 
+.load-more-explore-dis {
+    background-color: #bdbdbd;
+}
 
+.load-more-explore:hover {
+    background-color: #035f34;
+}
