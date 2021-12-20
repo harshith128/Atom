@@ -3,9 +3,9 @@ import backimg from "./backgroundblack.jpg";
 import { Link } from "react-router-dom";
 
 export const Rewardconformation = () => {
+    const { amount } = JSON.parse(localStorage.getItem("reward"));
     return  (
         <div className="reward-confirm">
-            <div>
             <Link to="/" className="logodiv">
                 <img src="images/Logo.png" className="imglogo" alt="" />
             </Link>
@@ -20,28 +20,31 @@ export const Rewardconformation = () => {
                     <img src="images/fwd.svg" alt="" className="fwd-image" />
                     <h3 className="confirm">CONFIRM</h3>
                 </div>
-                <div className="reward-section">
-                    <div className="your">Select Your Reward</div>
-                    <div className="edit">Edit</div>
+                <div className="confirm-apge-section">
+                    <div className="reward-section-confirm">
+                    <div className="edit-your">
+                        <div className="your">Select Your Reward</div>
+                        <Link to="/reward"><div className="edit">Edit</div></Link>
+                    </div>
                     <div className="boxshadow">
                         <div>
                             <div className="boxreward">Reward <span className="early">Early Bird ORCA Pot Premium set</span></div>
                             <div className="boxreward bonus">Bonus</div>
-                            <div className="rsreward">$1</div>
+                            <div className="rsreward">${ amount }</div>
                             <hr  className="hr"/>
                             <div className="boxreward bonus">New Total</div>
-                            <div className="rsreward green">$1</div>
+                            <div className="rsreward green">${ amount }</div>
                             <div className="end boxreward bonus">Previous total</div>
-                            <div className="rsreward">$1</div>
+                            <div className="rsreward">${ amount }</div>
                         </div>
                     </div>
                     <div>
-                        <div className="btnclick"><Link to="/signup">Confirm Charges</Link></div>
-                        <div className="cancel">Cancel</div>
+                        <Link to="/signup"><div className="btnclick">Confirm Charges</div></Link>
+                        <Link to="/"><div className="cancel">Cancel</div></Link>
                     </div>
-                </div>
+                    </div>
 
-                <div className="reward-section2">
+                    <div className="reward-section3">
                     {/* <div>Hello world.</div>
                     <div>Hello world.</div> */}
                     <div className="backimage" style={{background: `url(${backimg})`}}>
@@ -76,10 +79,9 @@ export const Rewardconformation = () => {
                         <img src="images/bulletarrows.jpg" alt="" />
                         <span className="queries">If this project is funded, how do I get my reward?</span>
                     </div>
+                    </div>
+            
                 </div>
-
-
-            </div>
             </div>
         </div>
     )

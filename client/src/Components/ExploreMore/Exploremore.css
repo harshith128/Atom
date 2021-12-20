@@ -390,6 +390,11 @@ color: #018757;
     text-align: left;
     color: #525252;
 }
+
+.green-cover {
+    width: 80%;
+}
+
 .green_bar{
     height: 3px;
     background: #018757;
@@ -456,3 +461,4 @@ color: #018757;
 .load-more-explore:hover {
     background-color: #035f34;
 }
+

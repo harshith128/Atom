@@ -155,7 +155,7 @@ export const Exploremore = () => {
 								<p className="creator">By {ele.creator}</p>
 							</div>
 
-							<div className="">
+							<div className="green-cover">
 								<div
 									className="green_bar"
 									style={{ width: `${Math.floor(Math.random() * 100) + 1}%` }}

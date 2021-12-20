@@ -82,26 +82,22 @@ export const Rewards = () => {
                     <div className="reward">Select an option below</div>
                     <div className="reward-selection"></div>
                     <div>
-                        {!select &&
-                        <div className="reward-input" onClick={ ()=> setSelect(true)}>
-                            <div className="circle"></div>
+                        <div className={ select ? "reward-input money5" : "reward-input"}>
+                            <div className={ select ? "circle-selected" : "circle"} onClick={ ()=> setSelect(!select)}></div>
                             <div className="pledgeReward">Pledge without a reward</div>
-                        </div>}
-                        {select &&
-                        <div  className="reward-input money5">
-                            <div className="cir">
-                            <div className="circle circleg"></div>
-                            </div>
-                            <div className="pledgeReward">Pledge without a reward</div>
-                            <div className="left-padd left-padd1">
-                                <div className="rs1">Pledge amount</div>
-                                <div className="rsprice rsprice1"><p className="dollor-text">$</p></div>
-                                <input onChange={handleChandeReward} type="number" value={amount} className="inputbar inputbarselect" placeholder="Enter Amount" />
-                                <Link style={{textDecoration: "none"}} to="/rewardconformationpage">
-                                   <span onClick={handleReward} className="conti">Continue</span>
-                                </Link>
-                            </div>
-                        </div>}
+                            {
+                                select ? 
+                                <div className="left-padd left-padd1">
+                                    <div className="rs1">Pledge amount</div>
+                                    <div className="rsprice rsprice1"><p className="dollor-text">$</p></div>
+                                    <input onChange={handleChandeReward} type="number" value={amount} className="inputbar inputbarselect" placeholder="Enter Amount" />
+                                    <Link style={{textDecoration: "none"}} to="/rewardconformationpage">
+                                        <span onClick={handleReward} className="conti">Continue</span>
+                                    </Link>
+                                </div> : <></>
+                            }
+                            
+                        </div>
                     </div>
                     <div>
                         <div className="reward-input money">
