@@ -49,11 +49,11 @@ export default function Carousel_func({ title }) {
 		>
 			<div style={{ marginTop: "8%" }}>
 				<div style={{ display: "flex", marginLeft: "5.5%" }}>
-					<h3 style={{ color: "##000000", fontFamily: "Inter, sans-serif" }}>
-						{title}
-					</h3>
+					<h3 className="car-title-fam">{title}</h3>
 					<a href="./" className="link">
-						<p style={{ color: "#003BFF" }}>Discover More {">"}</p>
+						<p style={{ color: "#003BFF", marginTop: "9%" }}>
+							Discover More {">"}
+						</p>
 					</a>
 				</div>
 
@@ -61,49 +61,25 @@ export default function Carousel_func({ title }) {
 					{details.map((e) => (
 						<>
 							<div style={styles}>
-								<img style={{height: "148px"}} src={e.coverImage} alt="" />
+								<img style={{ height: "148px" }} src={e.coverImage} alt="" />
 								<div className="dummy-bar-home">
-								<div
-									style={{
-										width: `${randomOne()}%`,
-										height: "6px",
-										backgroundColor: "#018757",
-										color: "white",
-									}}
-								></div>
+									<div
+										style={{
+											width: `${randomOne()}%`,
+											height: "6px",
+											backgroundColor: "#018757",
+											color: "white",
+										}}
+									></div>
 								</div>
 								<div className="hover">
-									<p
-										style={{
-											fontSize: "16px",
-											textAlign: "left",
-											fontFamily: "Inter, sans-serif",
-										}}
-										className="pro-cal-name"
-									>
-										{e.projectName}
-									</p>
+									<p className="pro-cal-name">{e.projectName}</p>
 								</div>
-								<p
-									style={{
-										textAlign: "left",
-										color: "#282828",
-										marginBottom: "0px",
-										marginTop: "2%",
-										fontFamily: "Inter, sans-serif",
-										fontSize: "12px",
-									}}
+								<p className="pro-cal-desc"
 								>
 									{e.description}
 								</p>
-								<p
-									style={{
-										fontSize: "12px",
-										textAlign: "left",
-										color: "#A3A3A3",
-										marginTop: "5%",
-										fontFamily: "Inter, sans-serif",
-									}}
+								<p className="pro-cal-create"
 								>
 									By {e.creator}
 								</p>

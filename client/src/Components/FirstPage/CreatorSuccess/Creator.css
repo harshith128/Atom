@@ -3,7 +3,7 @@
 }
 .font-si-fam {
 	font-size: 14px;
-	font-family: "Inter", sans-serif;
+	font-family: 'Inter', sans-serif;
 	text-align: left;
 	color: #282828;
 	margin-left: 0%;
@@ -14,7 +14,7 @@
 }
 .font-si-fam-body {
 	font-size: 12px;
-	font-family: "Inter", sans-serif;
+	font-family: 'Inter', sans-serif;
 	text-align: left;
 	color: #282828;
 	margin-top: 10%;
@@ -23,12 +23,12 @@
 }
 .font-si-fam-read {
 	font-size: 12px;
-	font-family: "Inter", sans-serif;
+	font-family: 'Inter', sans-serif;
 	text-align: left;
 	color: #a3a3a3;
 }
 .font-si-caption {
-	font-family: "Inter", sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-size: 12px;
 	font-style: normal;
 	font-weight: 500;

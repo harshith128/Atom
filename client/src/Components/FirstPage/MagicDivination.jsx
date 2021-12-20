@@ -53,7 +53,7 @@ export default function MagicDivination({ url, heading, content, sub }) {
 					</div>
 					<div>
 						<Link
-							to={"./pagination"}
+							to={""}
 							style={{
 								color: "blue",
 								margin: "8% 9.5%",

@@ -7,14 +7,14 @@ p {
 	text-align: center;
 }
 .style-p-fam {
-	font-family: 'Inter', sans-serif;
+	font-family: "Inter", sans-serif;
 	font-size: 12px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: 18px;
 	letter-spacing: 0em;
 	text-align: center;
-	color: #7A7A7A;
+	color: #7a7a7a;
 }
 
 .count {
@@ -58,6 +58,12 @@ p {
 	color: #7a7a7a;
 	font-size: 0.9rem;
 	margin-top: 0%;
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 18px;
+	letter-spacing: 0em;
+	text-align: left;
 }
 .style-App > div:nth-child(2) {
 	margin-top: 0%;

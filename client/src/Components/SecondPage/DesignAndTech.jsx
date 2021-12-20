@@ -11,6 +11,7 @@ import { Footer } from "../Footer/Footer";
 import { Newsletter } from "../Newsletter/Newsletter";
 import { DisplayProjects } from "../ProjectDisplay/DisplaySideScroll";
 import { Link } from "react-router-dom";
+import "./explore.css"
 
 import { Explore } from "./Explore";
 
@@ -26,25 +27,21 @@ export const DesignAndTech = () => {
 		"DIY Electronis",
 		"Sound",
 	];
-	const styles = {
-		textAlign: "left",
-		marginLeft:"11%"
-	}
 	return (
 		<div>
 			<LogoNav />
 			<Nav />
 			<div style={{ marginTop: "5%", marginBottom: "0%" }}>
-				<h1 style={styles}>Design & Tech</h1>
-				<p style={styles}>
+				<h1 className="sec-des-fam">Design & Tech</h1>
+				<p className="sec-des-para-fam">
 					From fine design to innovative tech, discover projects from creators
 					working to build a more beautiful feature
 				</p>
 				
-				<Link to="/exploremore"><span style={{ marginLeft: "11%", color: "blue" }}>Explore Design</span></Link>
-				<span style={{marginLeft:"3%",color:"blue",marginBottom:"0px"}}>Explore Technology</span>
+				<Link to="/exploremore"><span className="sec-des-ex">Explore Design</span></Link>
+				<span className="sec-des-ex2">Explore Technology</span>
 			</div>
-			<div style={{ display: "flex", marginTop: "0%" }}>
+			<div style={{ display: "flex", marginTop: "0%",marginLeft:"0%" }}>
 				<FeaturedProject></FeaturedProject>
 				<Recommended></Recommended>
 			</div>
