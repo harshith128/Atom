@@ -30,12 +30,12 @@ Clone the project
   git pull https://github.com/harshith128/Atom.git
 ```
 - The project will be downloaded
-- Now open "server" folder 
-- npm install
-- npm start
-- Now open "client" folder 
-- npm install
-- npm start
+- Enter the command `cd server`
+- `npm install`
+- `npm start`
+- Enter the command `cd client`
+- `npm install`
+- `npm start`
 
 
 ## Screenshots
