@@ -1,10 +1,10 @@
-import "./Rewards.css"
+import "./Rewards.css";
 import backimg from "./backgroundblack.jpg";
 import { Link } from "react-router-dom";
 
 export const Rewardconformation = () => {
     return  (
-        <div>
+        <div className="reward-confirm">
             <div>
             <Link to="/" className="logodiv">
                 <img src="images/Logo.png" className="imglogo" alt="" />
@@ -15,12 +15,10 @@ export const Rewardconformation = () => {
                 <div className="subtit">by Everstt</div>
             </div>
             <div className="subheading">
-                <div className="steps">
-                <div className="reward">Rewards
-                <img src="images/forward.jpg" alt="" className="forwardarrow" />
-                <span className="confirm">CONFIRM</span>
-                </div>
-                
+                <div className="steps-confirm">
+                    <h3 className="reward">Rewards </h3>
+                    <img src="images/fwd.svg" alt="" className="fwd-image" />
+                    <h3 className="confirm">CONFIRM</h3>
                 </div>
                 <div className="reward-section">
                     <div className="your">Select Your Reward</div>

@@ -1,0 +1,22 @@
+.help-section {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+
+.help-text {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 12px;
+    color: #003BFF;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.kickstarter-copy {
+    color: #282828;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+}
