@@ -50,7 +50,7 @@ const SignupPage = () => {
 	return (
 		<div className="Container">
 			<div className="top__bar">
-				<img src="images/Logo.png" alt="logo" className="logo__img" />
+				<Link to="/"><img src="images/Logo.png" alt="logo" className="logo__img" /></Link>
 			</div>
 
 			<div className="product_name">
