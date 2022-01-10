@@ -54,7 +54,7 @@ export const DesignAndTech = () => {
 			<MagicDivination
 				sub="FOR CREATORS"
 				heading="Kickstarter Creator Tips: Design & Technology"
-				url="https://s3-alpha-sig.figma.com/img/3d6a/8c6b/a82a4a72a84095d0faa102edc01a2b9f?Expires=1640563200&Signature=BnqS3GLB1ejjUMRgjw67mKdVzy5j-pvVzwZJv1OcqgA2bfSvsC3WWqR0SuVkKsBocWEmmyePFSmoYG~04nr0cgqsO67mE1K7hRIh0GNjk9PZT41LHTI1bF73IY4AfR84sooVXTdpvFFVXrXzfvKml56nUON4U3aqnVIOTaelXQaUnHMFMsBgHdX1Tx7soizfJyegf3x~uzclsXpx7KUwowx7CK0e~7EfiAclEBkCZOQBku4FMLJFGCIKfExLas9~4kbWr5gp~WzaMe5r6~3xOXDPswSLqg~~DuDp4HrnHJtcWkZpA6d6AcUdmlhIbbL~OubP18mr49DcvxSs91jtOw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+				url="https://user-images.githubusercontent.com/61180475/148792074-6b37bae7-c18a-4d36-9809-81342eb63208.png"
 				content="Launch your Design or Technology project on Kickstarter with these resources to guide you through planning, promoting, launching and fulfilling your campaign."
 			/>
 			<Explore category="Technology" subCategory={tech} />
